@@ -1,5 +1,5 @@
-import { $content, createHtmlElement } from "./index.js";
-import "./style.css";
+import { $content, createHtmlElement } from "../index.js";
+import "../styles/footer.css";
 
 function render() {
   const $footer = document.createElement("footer");

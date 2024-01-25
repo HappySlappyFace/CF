@@ -1,0 +1,30 @@
+header {
+  background-color: var(--HeaderColor);;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: var(--HeaderShadowColor) 0px 0px 0px 5px;
+  /* height: 3rem; */
+  /* display: flex; */
+   /* align-content: center; */
+   /* justify-content: space-around; */
+}
+#headerNavbar {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+}
+.headerNavbarChild a {
+  text-decoration: none;
+}
+.headerNavbarChild {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--HeaderTextColor);
+}
+#headerNavbarImg {
+  height: 2rem;
+}

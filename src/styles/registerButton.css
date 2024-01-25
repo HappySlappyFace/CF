@@ -1,0 +1,13 @@
+#registerButton{
+  background-color: var(--ColorPalette1);
+  color: var(--ColorPaletteWhite);
+  font-family: 'Londrina Solid', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.1rem 4rem;
+}
