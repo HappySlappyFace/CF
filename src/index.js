@@ -7,7 +7,6 @@ import { createRegister } from "./components/registerPage.js";
 
 import "./styles/style.css";
 
-
 const $content = document.getElementById("content");
 
 function createHtmlElement(type, id, arrayClasses, content) {
@@ -18,11 +17,38 @@ function createHtmlElement(type, id, arrayClasses, content) {
   if (content) element.textContent = content;
   return element;
 }
+
+function slideshow() {
+  // i don't know why this works but it does. i wanted to use the script-slideshow.js file but it didn't work
+
+  const slideshowImages = document.querySelectorAll(".section-slideshow img");
+  const nextImageDelay = 2500;
+  let currentImageCounter = 0; // setting a variable to keep track of the current image (slide)
+
+  // slideshowImages[currentImageCounter].style.display = "block";
+  slideshowImages[currentImageCounter].style.opacity = 1;
+
+  setInterval(nextImage, nextImageDelay);
+
+  function nextImage() {
+    // slideshowImages[currentImageCounter].style.display = "none";
+    slideshowImages[currentImageCounter].style.opacity = 0;
+
+    currentImageCounter = (currentImageCounter+1) % slideshowImages.length;
+
+    // slideshowImages[currentImageCounter].style.display = "block";
+    slideshowImages[currentImageCounter].style.opacity = 1;
+  }
+}
+
+
 function home() {
   $content.innerHTML = "";
   createNavbar();
   createHome();
+  slideshow(); // this is required for the slideshow animation to work
   createFooter();
+  
 }
 function register() {
   $content.innerHTML = "";

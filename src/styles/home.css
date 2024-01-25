@@ -1,3 +1,4 @@
+
 .section1 {
   display: block;
   position: relative;
@@ -53,35 +54,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 80vh; */
   background-color: black;
   gap: 1rem;
   color: var(--ColorPalette5);
 }
 
-#section2Title {
-  font-size: 7rem;
-  font-weight: 300;
-  text-align: center;
-  /* margin-bottom: 1rem; */
-  font-family: BarefoodSignBrush;
-  color: white;
-}
-#section2Text {
-  width: 50%;
-  font-weight: 200;
-}
-.section2Img {
-  width: 60%;
-  height: auto;
-  object-fit: cover;
-  filter: opacity(100%);
-  box-shadow: var(--ColorPalette4) 0px 0px 10px 1px;
-}
-.indexSection2 {
+
+/* .indexSection2 {
   width: 100%;
   height: auto;
   object-fit: cover;
   filter: opacity(100%);
   box-shadow: var(--ColorPalette4) 0px 0px 10px 1px;
-}
+} */
+.section-slideshow img {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: width: 100vw; */
+    height: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: height: 100vh; */ 
+    object-fit: cover;
+    z-index:1;
+    filter: brightness(50%); /* 0% black, 100% original image, values > 100% are allowed for brighter than original image. */
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+  }
+  .section-slideshow img:first-child {
+    display: block;
+    opacity: 1;
+  }
