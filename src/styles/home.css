@@ -1,8 +1,13 @@
+.sections{
+  scroll-snap-type: y mandatory;
+  /* overflow-y: scroll; */
+}
 
 .section1 {
   display: block;
   position: relative;
   height: auto;
+  scroll-snap-align: start;
 }
 
 .section1Content{
@@ -23,11 +28,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: min-content;
+  height: 92vh;
   object-fit:cover;
-  object-position: 0 20%;
+  object-position: 50% 100%;
   /* z-index: -1; */
   filter: opacity(100%);
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
 }
 
 #section1Title {
@@ -49,38 +56,40 @@
 }
 
 .section2 {
+  scroll-snap-align: start;
+  display: block;
   display: flex;
-  padding: 1rem;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black;
   gap: 1rem;
   color: var(--ColorPalette5);
 }
 
+.section2 h2{
+  z-index: 1;
+  color: var(--ColorPaletteWhite);
+  font-weight: 100;
+}
 
-/* .indexSection2 {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  filter: opacity(100%);
-  box-shadow: var(--ColorPalette4) 0px 0px 10px 1px;
-} */
+.section-slideshow{
+  height: 50vh; /* warning this is hard coded relative to the height of the images because i couldn't remember how to properly make parent take height of child*/
+}
+
 .section-slideshow img {
     position: absolute;
     /* top: 0; */
     left: 0;
     width: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: width: 100vw; */
-    height: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: height: 100vh; */ 
+    height: 50vh; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: height: 100vh; */ 
     object-fit: cover;
-    z-index:1;
+    z-index:0;
     filter: brightness(50%); /* 0% black, 100% original image, values > 100% are allowed for brighter than original image. */
     /* display: none; */
     opacity: 0;
     transition: opacity 0.75s ease-in-out;
-  }
-  .section-slideshow img:first-child {
-    display: block;
-    opacity: 1;
-  }
+}
+
+.section-slideshow img:first-child {
+  display: block;
+  opacity: 1;
+}

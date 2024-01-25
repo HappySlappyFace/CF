@@ -15,7 +15,9 @@ const images = importAll(require.context('../img/pastHackathons/', false, /\.(pn
 // console.log(images);
 
 function render() {
+  const $sections = createHtmlElement("div", null, ["sections"], null); 
   const $section1 = createHtmlElement("div", null, ["section1"], null);
+  
   const $img = new Image();
   $img.src = Img1;
   $img.id = "section1Background";
@@ -49,6 +51,8 @@ function render() {
   $section1.appendChild($section1Content);
 
   const $section2 = createHtmlElement("div", null, ["section2"], null);
+  const $h2 = createHtmlElement("h2", null, null, "Past Hackathons");
+  $section2.appendChild($h2);
   const $sectionSlideshow = createHtmlElement(
     "div",
     null,
@@ -74,8 +78,10 @@ function render() {
   // img2.classList.add("indexSection2");
   // $section2.appendChild(img2);
 
-  $content.appendChild($section1);
-  $content.appendChild($section2);
+  $sections.appendChild($section1);
+  $sections.appendChild($section2);
+  $content.appendChild($sections);
+  
 }
 
 export { render as createHome };

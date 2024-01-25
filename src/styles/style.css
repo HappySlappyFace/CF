@@ -18,7 +18,9 @@
   --ColorPalette4: #a68c6d;
   --ColorPalette5: #FAB341;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   display: flex;
   flex-direction: column;

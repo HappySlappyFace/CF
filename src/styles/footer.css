@@ -8,6 +8,7 @@ footer {
   padding: 1rem;
   height: 4vh;
   gap: 0.5rem;
+  position: relative;
 }
 .footerText,
 .footerText h2 {

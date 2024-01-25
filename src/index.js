@@ -57,9 +57,24 @@ function register() {
   createFooter();
 }
 
-function github() {
-  window.open("https://github.com/HappySlappyFace", "_blank");
-}
+
+// window.scroll({
+//   top: 2500, 
+//   left: 0, 
+//   behavior: 'smooth'
+// });
+
+// // Scroll certain amounts from current position 
+// window.scrollBy({ 
+//   top: 1000, // could be negative value
+//   left: 0, 
+//   behavior: 'smooth' 
+// });
+
+// Scroll to a certain element
+// document.querySelector('.hello').scrollIntoView({ 
+//   behavior: 'smooth' 
+// });
 
 document.addEventListener("click", (e) => {
   const target = e.target.dataset.target;
