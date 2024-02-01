@@ -15,8 +15,9 @@
   --ColorPalette1: #D63E1A; /* Primary Red */
   --ColorPalette2: #69A050; /* Primary Green*/
   --ColorPalette3: #EEBC53; /* Primary Yellow*/
-  --ColorPalette4: #a68c6d;
-  --ColorPalette5: #FAB341;
+  --ColorPalette4: #C13817; /* Section 3 Title */
+  --ColorPalette5: #FAB341; /* Section 1 Title */
+  --ColorPalette6: #E1BA5B; /* Section 3 Background */
 }
 html {
   scroll-behavior: smooth;
@@ -26,7 +27,6 @@ body {
   flex-direction: column;
   background-color: var(--BackgroundColor);
 }
-
 
 /* book */
 #bookImg {
