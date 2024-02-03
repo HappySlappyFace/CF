@@ -1,4 +1,5 @@
 import "./styles/reset.css";
+import "./styles/fonts.css";
 
 import { createNavbar } from "./components/navbar.js";
 import { createFooter } from "./components/footer.js";
@@ -82,7 +83,7 @@ document.addEventListener("click", (e) => {
   if (target === "Home") home();
   if (target === "Sponsors") register();
   if (target === "Book") book();
-  
+
   if (target === "Register") register();
   if (target === "Github") github();
 });

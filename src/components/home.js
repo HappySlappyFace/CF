@@ -60,13 +60,32 @@ function render() {
     ["section-slideshow"],
     null
   );
+
+  let delayIncrement = 1000; // Delay increment of 1 second
+  let imageCount = 1; // To keep track of the current image number
+
+
   for (let key in images) {
     if (images.hasOwnProperty(key)) {
       let imageUrl = images[key];
       const img = new Image();
-      img.src = imageUrl;
-      // img.classList.add("indexSection2");
+
+      if (imageCount === 0) {
+        // Load the first image instantly
+        img.src = imageUrl;
+      } else {
+        // Calculate the delay for each subsequent image
+        let delay = imageCount * delayIncrement;
+        setTimeout(() => {
+          img.src = imageUrl;
+        }, delay);
+      }
+
+      // Uncomment if you need to add a class to your images
+      // img.classList.add("indexSection");
+
       $sectionSlideshow.appendChild(img);
+      imageCount++; // Increment the image count
     }
   }
   $section2.appendChild($sectionSlideshow);

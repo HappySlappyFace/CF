@@ -1,9 +1,3 @@
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
-@font-face {
-  font-family: BarefoodSignBrush;
-  src: url(../font/BarefoodSignBrush.ttf);
-}
 /* colors */
 :root {
   --HeaderColor: #EEA40B;
