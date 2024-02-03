@@ -3,6 +3,16 @@ import "../styles/navbar.css";
 import LogoCF from "../logos/LogoCF.svg";
 import LogoMTC from "../logos/LogoMTCBlack.svg";
 
+
+function toggleMenu() {
+  var links = document.getElementById('navbarLinks');
+  if (links.classList.contains('active')) {
+    links.classList.remove('active');
+  } else {
+    links.classList.add('active');
+  }
+}
+
 function render() {
   const navbarItems = ["History", "Sponsors", "Planning","Register", "About us"];
   const $header = document.createElement("header");
@@ -19,12 +29,22 @@ function render() {
 
   $ul.appendChild($li);
 
+  const $hamburger= createHtmlElement("li", "hamburger", null, null);
+  $hamburger.classList.add("headerNavbarChild");
+  $hamburger.classList.add("hamburger");
+  $hamburger.textContent = "☰";
+  $hamburger.addEventListener("click", toggleMenu);
+  $ul.appendChild($hamburger);
+  
+  const $navbarLinks = createHtmlElement("div", "navbarLinks", null, null);
+
   navbarItems.forEach((item) => {
-    const $li = createHtmlElement("li", null, null, item);
+    const $li = createHtmlElement("li", "navbar-item", null, item);
     $li.dataset.target = item;
     $li.classList.add("headerNavbarChild");
-    $ul.appendChild($li);
+    $navbarLinks.appendChild($li);
   });
+  $ul.appendChild($navbarLinks);
 
   const $li2 = createHtmlElement("li", null, null, null);
   const $img2 = new Image();

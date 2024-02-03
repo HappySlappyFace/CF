@@ -10,7 +10,7 @@ header {
    /* align-content: center; */
    /* justify-content: space-around; */
 }
-#headerNavbar {
+#headerNavbar, #navbarLinks {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -27,4 +27,45 @@ header {
 }
 #headerNavbarImg {
   height: 2rem;
+}
+.hamburger {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+}
+#navbarLinks{
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger icon */
+    text-align: center;
+    
+  }
+
+  #navbarLinks {
+    display: none; /* Hide navbar items */
+    flex-direction: column;
+    width: 100%; /* Full width */
+    position: absolute;
+    top: 100%; /* Directly below the nav bar */
+    left: 0;
+    background-color: #f9f9f9;
+  }
+
+  #navbarLinks.active {
+    display: flex; 
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .navbar-item {
+    display: block; 
+    text-align: left;
+    width: 100%; 
+    padding: 8px;
+    border-top: 1px solid #ddd; 
+  }
 }
