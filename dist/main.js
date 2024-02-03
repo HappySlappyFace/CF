@@ -42,6 +42,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/register.css":
+/*!***********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/register.css ***!
+  \***********************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `/* BEGIN: Form Styles */\r\nform {\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-self: center;\r\n    align-self: center;\r\n    width: max-content;\r\n    gap: 0.5rem;\r\n}\r\n\r\n.registerFormElement {\r\n    background-color: transparent;\r\n    border: 1px solid #ccc;\r\n    border-radius: 5px;\r\n    padding: 10px;\r\n    color: var(--ColorPaletteWhite);\r\n    flex: 1;\r\n}\r\n\r\n.registerFormElement::placeholder {\r\n    color: var(--ColorPalette1);\r\n}\r\n\r\n.registerFormElement:focus {\r\n    color: var(--ColorPaletteWhite);\r\n    font-weight: bold;\r\n}\r\n.registerFormElement option{\r\n    color: var(--ColorPaletteBlack);\r\n}\r\n/* END: Form Styles */\r\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/styles/register.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/registerButton.css":
 /*!*****************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/registerButton.css ***!
@@ -71,7 +82,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../font/BarefoodSignBrush.ttf */ \"./src/font/BarefoodSignBrush.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap);\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `/* fonts */\r\n@font-face {\r\n  font-family: BarefoodSignBrush;\r\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_0___});\r\n}\r\n/* colors */\r\n:root {\r\n  --HeaderColor: #EEA40B;\r\n  --HeaderTextColor: #081826;\r\n  --HeaderShadowColor: #B38423;\r\n  --ColorPaletteWhite: #FFF;\r\n  --ColorPaletteBlack: #000;\r\n  --BackgroundColor: #003E1A;\r\n  --ColorPalette1: #D63E1A; /* Primary Red */\r\n  --ColorPalette2: #69A050; /* Primary Green*/\r\n  --ColorPalette3: #EEBC53; /* Primary Yellow*/\r\n  --ColorPalette4: #C13817; /* Section 3 Title */\r\n  --ColorPalette5: #FAB341; /* Section 1 Title */\r\n  --ColorPalette6: #E1BA5B; /* Section 3 Background */\r\n}\r\nhtml {\r\n  scroll-behavior: smooth;\r\n}\r\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  background-color: var(--BackgroundColor);\r\n}\r\n\r\n/* book */\r\n#bookImg {\r\n  width: 50%;\r\n  height: auto;\r\n  object-fit: cover;\r\n  filter: opacity(100%);\r\n  box-shadow: var(--ColorPalette4) 0px 0px 10px 1px;\r\n}\r\n#buyButton {\r\n  background-color: var(--ColorPalette2);\r\n  color: var(--ColorPalette5);\r\n  border: none;\r\n  border-radius: 5px;\r\n  padding: 0.5rem 1rem;\r\n  font-size: 1.2rem;\r\n  font-weight: 300;\r\n  cursor: pointer;\r\n  transition: 0.3s;\r\n}\r\n\r\n/* contact */\r\n.contactLogos {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n  align-items: center;\r\n  gap: 1rem;\r\n}\r\n/* footer */\r\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/styles/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../font/BarefoodSignBrush.ttf */ \"./src/font/BarefoodSignBrush.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap);\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `/* fonts */\r\n@font-face {\r\n  font-family: BarefoodSignBrush;\r\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_0___});\r\n}\r\n/* colors */\r\n:root {\r\n  --HeaderColor: #EEA40B;\r\n  --HeaderTextColor: #081826;\r\n  --HeaderShadowColor: #B38423;\r\n  --ColorPaletteWhite: #FFF;\r\n  --ColorPaletteBlack: #000;\r\n  --BackgroundColor: #003E1A;\r\n  --ColorPalette1: #D63E1A; /* Primary Red */\r\n  --ColorPalette2: #69A050; /* Primary Green*/\r\n  --ColorPalette3: #EEBC53; /* Primary Yellow*/\r\n  --ColorPalette4: #C13817; /* Section 3 Title */\r\n  --ColorPalette5: #FAB341; /* Section 1 Title */\r\n  --ColorPalette6: #E1BA5B; /* Section 3 Background */\r\n}\r\n#content{\r\n  display: grid;\r\n}\r\nhtml {\r\n  scroll-behavior: smooth;\r\n}\r\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  background-color: var(--BackgroundColor);\r\n}\r\n\r\n/* book */\r\n#bookImg {\r\n  width: 50%;\r\n  height: auto;\r\n  object-fit: cover;\r\n  filter: opacity(100%);\r\n  box-shadow: var(--ColorPalette4) 0px 0px 10px 1px;\r\n}\r\n#buyButton {\r\n  background-color: var(--ColorPalette2);\r\n  color: var(--ColorPalette5);\r\n  border: none;\r\n  border-radius: 5px;\r\n  padding: 0.5rem 1rem;\r\n  font-size: 1.2rem;\r\n  font-weight: 300;\r\n  cursor: pointer;\r\n  transition: 0.3s;\r\n}\r\n\r\n/* contact */\r\n.contactLogos {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: center;\r\n  align-items: center;\r\n  gap: 1rem;\r\n}\r\n/* footer */\r\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/styles/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -138,6 +149,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"./node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ \"./node_modules/style-loader/dist/runtime/styleTagTransform.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_navbar_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./navbar.css */ \"./node_modules/css-loader/dist/cjs.js!./src/styles/navbar.css\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\n\n      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\n    \noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_navbar_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"], options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_navbar_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"] && _node_modules_css_loader_dist_cjs_js_navbar_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals ? _node_modules_css_loader_dist_cjs_js_navbar_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals : undefined);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/styles/navbar.css?");
+
+/***/ }),
+
+/***/ "./src/styles/register.css":
+/*!*********************************!*\
+  !*** ./src/styles/register.css ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"./node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ \"./node_modules/style-loader/dist/runtime/styleTagTransform.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_register_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./register.css */ \"./node_modules/css-loader/dist/cjs.js!./src/styles/register.css\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\n\n      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\n    \noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_register_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"], options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_register_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"] && _node_modules_css_loader_dist_cjs_js_register_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals ? _node_modules_css_loader_dist_cjs_js_register_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals : undefined);\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/styles/register.css?");
 
 /***/ }),
 
@@ -291,7 +313,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createRegister: () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ \"./src/index.js\");\n\r\nfunction render() {\r\n}\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/components/registerPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createRegister: () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index.js */ \"./src/index.js\");\n/* harmony import */ var _styles_register_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/register.css */ \"./src/styles/register.css\");\n\r\n\r\nfunction render() {\r\n    //generate form including Name, Email, university name, educational level, team name, birthday and Submit button\r\n    const $form = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"form\", \"registerForm\", null, null);\r\n    const $name = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"input\", \"name\", [\"registerFormElement\"], null);\r\n    $name.type = \"text\";\r\n    $name.placeholder = \"Name\";\r\n    $form.appendChild($name);\r\n    const $phone = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"input\", \"phone\", [\"registerFormElement\"], null);\r\n    $phone.type = \"tel\";\r\n    $phone.placeholder = \"Phone Number\";\r\n    $form.appendChild($phone);\r\n    const $email = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"input\", \"email\", [\"registerFormElement\"], null);\r\n    $email.type = \"email\";\r\n    $email.placeholder = \"Email\";\r\n    $form.appendChild($email);\r\n    const $university = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"input\", \"university\", [\"registerFormElement\"], null);\r\n    $university.type = \"text\";\r\n    $university.placeholder = \"University\";\r\n    $form.appendChild($university);\r\n    const $education = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"select\", \"education\", [\"registerFormElement\"], null);\r\n    const $option1 = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"option\", null, null, \"High School\");\r\n    $education.appendChild($option1);\r\n    const $option2 = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"option\", null, null, \"Undergraduate\");\r\n    $education.appendChild($option2);\r\n    const $option3 = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"option\", null, null, \"Graduate\");\r\n    $education.appendChild($option3);\r\n    $form.appendChild($education);\r\n    const $team = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"input\", \"team\", [\"registerFormElement\"], null);\r\n    $team.type = \"text\";\r\n    $team.placeholder = \"Team Name\";\r\n    $form.appendChild($team);\r\n    const $birthday = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"input\", \"birthday\", [\"registerFormElement\"], null);\r\n    $birthday.type = \"date\";\r\n    $form.appendChild($birthday);\r\n    const $submit = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"input\", \"submit\", [\"registerFormElement\"], null);\r\n    $submit.type = \"submit\";\r\n    $submit.value = \"Submit\";\r\n    //add phone number and a select with team members from 1 to 4\r\n    \r\n    const $members = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"select\", \"members\", [\"registerFormElement\"], null);\r\n    const $option4 = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"option\", null, null, \"1\");\r\n    $members.appendChild($option4);\r\n    const $option5 = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"option\", null, null, \"2\");\r\n    $members.appendChild($option5);\r\n    const $option6 = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"option\", null, null, \"3\");\r\n    $members.appendChild($option6);\r\n    const $option7 = (0,_index_js__WEBPACK_IMPORTED_MODULE_0__.createHtmlElement)(\"option\", null, null, \"4\");\r\n    $members.appendChild($option7);\r\n    $form.appendChild($members);\r\n\r\n    $form.appendChild($submit);\r\n    _index_js__WEBPACK_IMPORTED_MODULE_0__.$content.appendChild($form);\r\n\r\n}\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/components/registerPage.js?");
 
 /***/ }),
 
@@ -312,7 +334,216 @@ eval("var map = {\n\t\"./1.jpg\": \"./src/img/pastHackathons/1.jpg\",\n\t\"./10.
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   $content: () => (/* binding */ $content),\n/* harmony export */   createHtmlElement: () => (/* binding */ createHtmlElement)\n/* harmony export */ });\n/* harmony import */ var _styles_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/reset.css */ \"./src/styles/reset.css\");\n/* harmony import */ var _components_navbar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/navbar.js */ \"./src/components/navbar.js\");\n/* harmony import */ var _components_footer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/footer.js */ \"./src/components/footer.js\");\n/* harmony import */ var _components_home_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/home.js */ \"./src/components/home.js\");\n/* harmony import */ var _components_registerPage_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/registerPage.js */ \"./src/components/registerPage.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst $content = document.getElementById(\"content\");\r\n\r\nfunction createHtmlElement(type, id, arrayClasses, content) {\r\n  const element = document.createElement(type);\r\n  if (id) element.id = id;\r\n  if (arrayClasses)\r\n    arrayClasses.forEach((clase) => element.classList.add(clase));\r\n  if (content) element.textContent = content;\r\n  return element;\r\n}\r\n\r\nfunction slideshow() {\r\n  // i don't know why this works but it does. i wanted to use the script-slideshow.js file but it didn't work\r\n\r\n  const slideshowImages = document.querySelectorAll(\".section-slideshow img\");\r\n  const nextImageDelay = 2500;\r\n  let currentImageCounter = 0; // setting a variable to keep track of the current image (slide)\r\n\r\n  // slideshowImages[currentImageCounter].style.display = \"block\";\r\n  slideshowImages[currentImageCounter].style.opacity = 1;\r\n\r\n  setInterval(nextImage, nextImageDelay);\r\n\r\n  function nextImage() {\r\n    // slideshowImages[currentImageCounter].style.display = \"none\";\r\n    slideshowImages[currentImageCounter].style.opacity = 0;\r\n\r\n    currentImageCounter = (currentImageCounter+1) % slideshowImages.length;\r\n\r\n    // slideshowImages[currentImageCounter].style.display = \"block\";\r\n    slideshowImages[currentImageCounter].style.opacity = 1;\r\n  }\r\n}\r\n\r\n\r\nfunction home() {\r\n  $content.innerHTML = \"\";\r\n  (0,_components_navbar_js__WEBPACK_IMPORTED_MODULE_1__.createNavbar)();\r\n  (0,_components_home_js__WEBPACK_IMPORTED_MODULE_3__.createHome)();\r\n  slideshow(); // this is required for the slideshow animation to work\r\n  (0,_components_footer_js__WEBPACK_IMPORTED_MODULE_2__.createFooter)();\r\n  \r\n}\r\nfunction register() {\r\n  $content.innerHTML = \"\";\r\n  (0,_components_navbar_js__WEBPACK_IMPORTED_MODULE_1__.createNavbar)();\r\n  (0,_components_registerPage_js__WEBPACK_IMPORTED_MODULE_4__.createRegister)();\r\n  (0,_components_footer_js__WEBPACK_IMPORTED_MODULE_2__.createFooter)();\r\n}\r\n\r\n\r\n// window.scroll({\r\n//   top: 2500, \r\n//   left: 0, \r\n//   behavior: 'smooth'\r\n// });\r\n\r\n// // Scroll certain amounts from current position \r\n// window.scrollBy({ \r\n//   top: 1000, // could be negative value\r\n//   left: 0, \r\n//   behavior: 'smooth' \r\n// });\r\n\r\n// Scroll to a certain element\r\n// document.querySelector('.hello').scrollIntoView({ \r\n//   behavior: 'smooth' \r\n// });\r\n\r\ndocument.addEventListener(\"click\", (e) => {\r\n  const target = e.target.dataset.target;\r\n    // console.log(\"wtf\", event.target.dataset.target);\r\n  if (target === \"Home\") home();\r\n  if (target === \"Sponsors\") register();\r\n  if (target === \"Book\") book();\r\n  if (target === \"Contact\") contact();\r\n  if (target === \"Github\") github();\r\n});\r\nhome();\r\n\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   $content: () => (/* binding */ $content),\n/* harmony export */   createHtmlElement: () => (/* binding */ createHtmlElement)\n/* harmony export */ });\n/* harmony import */ var _styles_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/reset.css */ \"./src/styles/reset.css\");\n/* harmony import */ var _components_navbar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/navbar.js */ \"./src/components/navbar.js\");\n/* harmony import */ var _components_footer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/footer.js */ \"./src/components/footer.js\");\n/* harmony import */ var _components_home_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/home.js */ \"./src/components/home.js\");\n/* harmony import */ var _components_registerPage_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/registerPage.js */ \"./src/components/registerPage.js\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst $content = document.getElementById(\"content\");\r\n\r\nfunction createHtmlElement(type, id, arrayClasses, content) {\r\n  const element = document.createElement(type);\r\n  if (id) element.id = id;\r\n  if (arrayClasses)\r\n    arrayClasses.forEach((clase) => element.classList.add(clase));\r\n  if (content) element.textContent = content;\r\n  return element;\r\n}\r\n\r\nfunction slideshow() {\r\n  // i don't know why this works but it does. i wanted to use the script-slideshow.js file but it didn't work\r\n\r\n  const slideshowImages = document.querySelectorAll(\".section-slideshow img\");\r\n  const nextImageDelay = 2500;\r\n  let currentImageCounter = 0; // setting a variable to keep track of the current image (slide)\r\n\r\n  // slideshowImages[currentImageCounter].style.display = \"block\";\r\n  slideshowImages[currentImageCounter].style.opacity = 1;\r\n\r\n  setInterval(nextImage, nextImageDelay);\r\n\r\n  function nextImage() {\r\n    // slideshowImages[currentImageCounter].style.display = \"none\";\r\n    slideshowImages[currentImageCounter].style.opacity = 0;\r\n\r\n    currentImageCounter = (currentImageCounter+1) % slideshowImages.length;\r\n\r\n    // slideshowImages[currentImageCounter].style.display = \"block\";\r\n    slideshowImages[currentImageCounter].style.opacity = 1;\r\n  }\r\n}\r\n\r\n\r\nfunction home() {\r\n  $content.innerHTML = \"\";\r\n  (0,_components_navbar_js__WEBPACK_IMPORTED_MODULE_1__.createNavbar)();\r\n  (0,_components_home_js__WEBPACK_IMPORTED_MODULE_3__.createHome)();\r\n  slideshow(); // this is required for the slideshow animation to work\r\n  (0,_components_footer_js__WEBPACK_IMPORTED_MODULE_2__.createFooter)();\r\n  \r\n}\r\nfunction register() {\r\n  $content.innerHTML = \"\";\r\n  (0,_components_navbar_js__WEBPACK_IMPORTED_MODULE_1__.createNavbar)();\r\n  (0,_components_registerPage_js__WEBPACK_IMPORTED_MODULE_4__.createRegister)();\r\n  (0,_components_footer_js__WEBPACK_IMPORTED_MODULE_2__.createFooter)();\r\n}\r\n\r\n\r\n// window.scroll({\r\n//   top: 2500, \r\n//   left: 0, \r\n//   behavior: 'smooth'\r\n// });\r\n\r\n// // Scroll certain amounts from current position \r\n// window.scrollBy({ \r\n//   top: 1000, // could be negative value\r\n//   left: 0, \r\n//   behavior: 'smooth' \r\n// });\r\n\r\n// Scroll to a certain element\r\n// document.querySelector('.hello').scrollIntoView({ \r\n//   behavior: 'smooth' \r\n// });\r\n\r\ndocument.addEventListener(\"click\", (e) => {\r\n  const target = e.target.dataset.target;\r\n    // console.log(\"wtf\", event.target.dataset.target);\r\n  if (target === \"Home\") home();\r\n  if (target === \"Sponsors\") register();\r\n  if (target === \"Book\") book();\r\n  \r\n  if (target === \"Register\") register();\r\n  if (target === \"Github\") github();\r\n});\r\nhome();\r\n\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/1.jpg":
+/*!**************************************!*\
+  !*** ./src/img/pastHackathons/1.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"6a5692f8a96c834ee175.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/1.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/10.jpg":
+/*!***************************************!*\
+  !*** ./src/img/pastHackathons/10.jpg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"11b7946e0acd000cfc7a.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/10.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/11.jpg":
+/*!***************************************!*\
+  !*** ./src/img/pastHackathons/11.jpg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"8a2a9c50c625ebbb7024.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/11.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/12.jpg":
+/*!***************************************!*\
+  !*** ./src/img/pastHackathons/12.jpg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"4af6e086c53508bffa0e.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/12.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/13.jpg":
+/*!***************************************!*\
+  !*** ./src/img/pastHackathons/13.jpg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"f81cf203f7dec37fe6c9.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/13.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/14.jpg":
+/*!***************************************!*\
+  !*** ./src/img/pastHackathons/14.jpg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"dcc6bd6a2da97aad0223.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/14.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/15.jpg":
+/*!***************************************!*\
+  !*** ./src/img/pastHackathons/15.jpg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"c3a90018e090668b91fa.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/15.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/2.jpg":
+/*!**************************************!*\
+  !*** ./src/img/pastHackathons/2.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"42c1504d147be9952e84.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/2.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/3.jpg":
+/*!**************************************!*\
+  !*** ./src/img/pastHackathons/3.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"b825627ceeac4cdcd635.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/3.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/4.jpg":
+/*!**************************************!*\
+  !*** ./src/img/pastHackathons/4.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"48d5e561783396907633.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/4.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/5.jpg":
+/*!**************************************!*\
+  !*** ./src/img/pastHackathons/5.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"931910bbde48ba4b14d0.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/5.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/6.jpg":
+/*!**************************************!*\
+  !*** ./src/img/pastHackathons/6.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"699de5a07d210164a581.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/6.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/7.jpg":
+/*!**************************************!*\
+  !*** ./src/img/pastHackathons/7.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"ac273f3d41f86a7f622f.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/7.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/8.jpg":
+/*!**************************************!*\
+  !*** ./src/img/pastHackathons/8.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"ce392052bd26e8e21a91.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/8.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/pastHackathons/9.jpg":
+/*!**************************************!*\
+  !*** ./src/img/pastHackathons/9.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"b07e61aece83167d69e9.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/9.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/section1.png":
+/*!******************************!*\
+  !*** ./src/img/section1.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"b754e5c21b21ff1c3190.png\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/section1.png?");
+
+/***/ }),
+
+/***/ "./src/img/section3.png":
+/*!******************************!*\
+  !*** ./src/img/section3.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"ccd9cf4442f1fb3229f0.png\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/section3.png?");
+
+/***/ }),
+
+/***/ "./src/logos/LogoCF.svg":
+/*!******************************!*\
+  !*** ./src/logos/LogoCF.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"94a695c972ba89aa2d35.svg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/logos/LogoCF.svg?");
+
+/***/ }),
+
+/***/ "./src/logos/LogoMTCBlack.svg":
+/*!************************************!*\
+  !*** ./src/logos/LogoMTCBlack.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"f1480bba787a413991e3.svg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/logos/LogoMTCBlack.svg?");
 
 /***/ }),
 
@@ -324,215 +555,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"38a865fc25720b9ebb65.ttf\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/font/BarefoodSignBrush.ttf?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/1.jpg":
-/*!**************************************!*\
-  !*** ./src/img/pastHackathons/1.jpg ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"d5298acc016ee63d4917.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/1.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/10.jpg":
-/*!***************************************!*\
-  !*** ./src/img/pastHackathons/10.jpg ***!
-  \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"8fbad3e9b8b33ef5d182.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/10.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/11.jpg":
-/*!***************************************!*\
-  !*** ./src/img/pastHackathons/11.jpg ***!
-  \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"61d2e21f4b4883a91d3b.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/11.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/12.jpg":
-/*!***************************************!*\
-  !*** ./src/img/pastHackathons/12.jpg ***!
-  \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"1110bc3284c06db2877d.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/12.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/13.jpg":
-/*!***************************************!*\
-  !*** ./src/img/pastHackathons/13.jpg ***!
-  \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"ade6249551cbea1aa5b9.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/13.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/14.jpg":
-/*!***************************************!*\
-  !*** ./src/img/pastHackathons/14.jpg ***!
-  \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"8866781dda5ffd6e081d.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/14.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/15.jpg":
-/*!***************************************!*\
-  !*** ./src/img/pastHackathons/15.jpg ***!
-  \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"de8a179f7ba42e6d8f61.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/15.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/2.jpg":
-/*!**************************************!*\
-  !*** ./src/img/pastHackathons/2.jpg ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"8b2efabdb20f69a22fa7.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/2.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/3.jpg":
-/*!**************************************!*\
-  !*** ./src/img/pastHackathons/3.jpg ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"7db24a492d5e6df8306c.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/3.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/4.jpg":
-/*!**************************************!*\
-  !*** ./src/img/pastHackathons/4.jpg ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"30169b92c6536036215b.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/4.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/5.jpg":
-/*!**************************************!*\
-  !*** ./src/img/pastHackathons/5.jpg ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"bbe0b97beb4bca32e92b.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/5.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/6.jpg":
-/*!**************************************!*\
-  !*** ./src/img/pastHackathons/6.jpg ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"f409c263e17e29d25754.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/6.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/7.jpg":
-/*!**************************************!*\
-  !*** ./src/img/pastHackathons/7.jpg ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"dc96814f9d4fc0752750.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/7.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/8.jpg":
-/*!**************************************!*\
-  !*** ./src/img/pastHackathons/8.jpg ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"faa12eac8728aeec7496.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/8.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/pastHackathons/9.jpg":
-/*!**************************************!*\
-  !*** ./src/img/pastHackathons/9.jpg ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"24ddc80a5f53e112fe6b.jpg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/pastHackathons/9.jpg?");
-
-/***/ }),
-
-/***/ "./src/img/section1.png":
-/*!******************************!*\
-  !*** ./src/img/section1.png ***!
-  \******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"9ce96bbe37b8fae272e7.png\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/section1.png?");
-
-/***/ }),
-
-/***/ "./src/img/section3.png":
-/*!******************************!*\
-  !*** ./src/img/section3.png ***!
-  \******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"c8e30f1e56a403ae8fe7.png\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/img/section3.png?");
-
-/***/ }),
-
-/***/ "./src/logos/LogoCF.svg":
-/*!******************************!*\
-  !*** ./src/logos/LogoCF.svg ***!
-  \******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"cc51ad874ff19fbb9ef6.svg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/logos/LogoCF.svg?");
-
-/***/ }),
-
-/***/ "./src/logos/LogoMTCBlack.svg":
-/*!************************************!*\
-  !*** ./src/logos/LogoMTCBlack.svg ***!
-  \************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"84b79a9e25be8849f876.svg\";\n\n//# sourceURL=webpack://odin-restaurant-page/./src/logos/LogoMTCBlack.svg?");
 
 /***/ })
 

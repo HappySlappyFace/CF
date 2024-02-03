@@ -1,0 +1,31 @@
+/* BEGIN: Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    width: max-content;
+    gap: 0.5rem;
+}
+
+.registerFormElement {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--ColorPaletteWhite);
+    flex: 1;
+}
+
+.registerFormElement::placeholder {
+    color: var(--ColorPalette1);
+}
+
+.registerFormElement:focus {
+    color: var(--ColorPaletteWhite);
+    font-weight: bold;
+}
+.registerFormElement option{
+    color: var(--ColorPaletteBlack);
+}
+/* END: Form Styles */

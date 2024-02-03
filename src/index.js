@@ -82,7 +82,8 @@ document.addEventListener("click", (e) => {
   if (target === "Home") home();
   if (target === "Sponsors") register();
   if (target === "Book") book();
-  if (target === "Contact") contact();
+  
+  if (target === "Register") register();
   if (target === "Github") github();
 });
 home();

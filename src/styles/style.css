@@ -19,6 +19,9 @@
   --ColorPalette5: #FAB341; /* Section 1 Title */
   --ColorPalette6: #E1BA5B; /* Section 3 Background */
 }
+#content{
+  display: grid;
+}
 html {
   scroll-behavior: smooth;
 }
