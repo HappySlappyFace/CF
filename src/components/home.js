@@ -3,6 +3,7 @@ import { registerButton } from "./registerButton.js";
 import "../styles/home.css";
 import Img1 from "../img/section1.png";
 import Img3 from "../img/section3.png";
+import Img4 from "../img/section4.png";
 
 function importAll(r) {
   let imgs = {};
@@ -95,31 +96,52 @@ function render() {
 
 
   const $section3 = createHtmlElement("div", null, ["section3"], null);
-
   const $img3 = new Image();
-  $img3.src = Img3;
+  setTimeout(() => {
+          $img3.src = Img3;
+  }, 200);
+  
   $img3.id = "section3Background";
   $section3.appendChild($img3);
   
-
   const $section3Content = createHtmlElement(
     "div",
     null,
     ["section3Content"],
     null
   );
-
   const $h2Section3 = createHtmlElement("h2", "section3Title", null, "Sponsors and Trainers");
-
   $section3Content.appendChild($h2Section3);
-
-
-
-
   $section3.appendChild($section3Content);
+
+
+  // section 4
+
+
+  const $section4 = createHtmlElement("div", null, ["section4"], null);
+  const $h2Section4 = createHtmlElement("h2", "section4Title", null, "What are you waiting for!?");
+  $section4.appendChild($h2Section4);
+  $section4.appendChild(registerButton());
+
+  const $img4 = new Image();
+  $img4.src = Img4;
+  $img4.id = "section4Background";
+  $section4.appendChild($img4);
+  
+
+  // section 5
+
+
+  const $section5 = createHtmlElement("div", null, ["section5"], null);
+  const $h2Section5 = createHtmlElement("h2", "section5Title", null, "About us");
+  $section5.appendChild($h2Section5);
+
+
   $sections.appendChild($section1);
   $sections.appendChild($section2);
   $sections.appendChild($section3);
+  $sections.appendChild($section4);
+  $sections.appendChild($section5);
   $content.appendChild($sections);
   
 }

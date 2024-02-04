@@ -41,7 +41,7 @@ header {
   .hamburger {
     display: block; /* Show hamburger icon */
     text-align: center;
-    
+    margin-top:8px;
   }
 
   #navbarLinks {

@@ -3,6 +3,19 @@ import "../styles/navbar.css";
 import LogoCF from "../logos/LogoCF.svg";
 import LogoMTC from "../logos/LogoMTCBlack.svg";
 
+//
+
+//
+
+//
+
+//Todo: make the logo for both the hackathon and the MTC the same width
+
+//
+
+//
+
+//
 
 function toggleMenu() {
   var links = document.getElementById('navbarLinks');
