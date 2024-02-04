@@ -190,7 +190,7 @@
   justify-content: center;
   gap: 1rem;
   
-   color: var(--ColorPalette9);
+   color: var(--ColorPaletteWhite);
   background-color: var(--ColorPalette8);
   padding-top: 0; /* Adjust or remove padding */
   margin-top: 0; /* Adjust or remove margin */

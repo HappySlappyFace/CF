@@ -21,6 +21,7 @@ function render() {
   const $img1 = new Image();
   $img1.src = Img1;
   $img1.id = "section1Background";
+  $img1.alt = "";
   $section1.appendChild($img1);
 
   const $section1Content = createHtmlElement(
@@ -70,7 +71,7 @@ function render() {
     if (images.hasOwnProperty(key)) {
       let imageUrl = images[key];
       const img = new Image();
-
+      img.alt = "";
       if (imageCount === 0) {
         // Load the first image instantly
         img.src = imageUrl;
@@ -97,6 +98,8 @@ function render() {
 
   const $section3 = createHtmlElement("div", null, ["section3"], null);
   const $img3 = new Image();
+  $img3.alt="";
+  $img3.alt = "Background";
   setTimeout(() => {
           $img3.src = Img3;
   }, 200);
@@ -126,6 +129,7 @@ function render() {
   const $img4 = new Image();
   $img4.src = Img4;
   $img4.id = "section4Background";
+  $img4.alt = "";
   $section4.appendChild($img4);
   
 

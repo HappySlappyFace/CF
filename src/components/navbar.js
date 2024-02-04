@@ -36,6 +36,7 @@ function render() {
   const $img = new Image();
   $img.id = "headerNavbarImg";
   $img.src = LogoCF;
+  $img.alt = "CodeFiesta Logo";
   $img.dataset.target = "Home";
   $li.appendChild($img);
   $li.classList.add("headerNavbarChild");
@@ -63,6 +64,7 @@ function render() {
   const $img2 = new Image();
   $img2.id = "headerNavbarImg";
   $img2.src = LogoMTC;
+  $img2.alt = "Microsoft Tech Club FSEGS Logo";
   // $img2.dataset.target = "Home";
   $img2.style.fill = "red";
   $li2.appendChild($img2);

@@ -1,5 +1,6 @@
 const path = require("path");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -7,8 +8,15 @@ module.exports = {
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
-    // clean: true,
+    clean: true,
   },
+  plugins: [
+    new CopyPlugin({
+      patterns: [
+        { from: "src/favicon", to: "" } //to the dist root directory
+      ],
+    }),
+  ],
   module: {
     rules: [
       {

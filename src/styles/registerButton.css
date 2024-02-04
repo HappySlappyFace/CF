@@ -1,4 +1,4 @@
-#registerButton{
+.registerButton{
   background-color: var(--ColorPalette1);
   color: var(--ColorPaletteWhite);
   font-family: 'Londrina Solid', sans-serif;
