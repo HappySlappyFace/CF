@@ -4,25 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Join CodeFiesta, the hackathon organized by Microsoft Tech Club FSEGS, to innovate, code, and create solutions that make a difference.">
-    <meta name="keywords" content="CodeFiesta, Hackathon, Microsoft Tech Club, FSEGS, Coding, Programming, Software Development, Innovation">
-    <meta name="author" content="Microsoft Tech Club FSEGS">
-    <meta property="og:title" content="CodeFiesta Hackathon by Microsoft Tech Club FSEGS">
-    <meta property="og:description" content="Dive into the world of coding at CodeFiesta, the premier hackathon event by Microsoft Tech Club FSEGS. Collaborate, innovate, and showcase your skills!">
+    <meta
+      name="description"
+      content="Join CodeFiesta, the hackathon organized by Microsoft Tech Club FSEGS, to innovate, code, and create solutions that make a difference."
+    />
+    <meta
+      name="keywords"
+      content="CodeFiesta, Hackathon, Microsoft Tech Club, FSEGS, Coding, Programming, Software Development, Innovation"
+    />
+    <meta name="author" content="Microsoft Tech Club FSEGS" />
+    <meta
+      property="og:title"
+      content="CodeFiesta Hackathon by Microsoft Tech Club FSEGS"
+    />
+    <meta
+      property="og:description"
+      content="Dive into the world of coding at CodeFiesta, the premier hackathon event by Microsoft Tech Club FSEGS. Collaborate, innovate, and showcase your skills!"
+    />
     <!-- <meta property="og:image" content="URL_to_your_image_logo_or_related_image">
     <meta property="og:url" content="URL_to_your_hackathon_page"> -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="CodeFiesta Hackathon">
-    <meta name="robots" content="index, follow">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CodeFiesta Hackathon" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
     <title>CodeFiesta</title>
   </head>
 
   <body>
     <div id="content"></div>
+    <div id="hiddenForm">
+      <form
+        id="registerForm"
+        name="registerForm"
+        data-netlify="true"
+        netlify="true"
+        method="POST"
+        action="/index.html"
+      >
+        <input
+          id="netlifyHidden"
+          type="hidden"
+          name="form-name"
+          value="registerForm"
+        /><input
+          id="name"
+          class="registerFormElement"
+          type="text"
+          placeholder="Name"
+          name="name"
+        /><input
+          id="phone"
+          class="registerFormElement"
+          type="tel"
+          placeholder="Phone Number"
+          name="phone"
+        /><input
+          id="email"
+          class="registerFormElement"
+          type="email"
+          placeholder="Email"
+          name="email"
+        /><input
+          id="university"
+          class="registerFormElement"
+          type="text"
+          placeholder="University"
+          name="university"
+        /><select id="education" class="registerFormElement" name="education">
+          <option>High School</option>
+          <option>Undergraduate</option>
+          <option>Graduate</option></select
+        ><input
+          id="team"
+          class="registerFormElement"
+          type="text"
+          placeholder="Team Name"
+          name="team"
+        /><input
+          id="birthday"
+          class="registerFormElement"
+          type="date"
+          name="birthday"
+        /><select id="members" class="registerFormElement" name="members">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option></select
+        ><input
+          id="submit"
+          class="registerFormElement"
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
