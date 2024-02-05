@@ -39,6 +39,8 @@ function render() {
     const $form = createHtmlElement("form", "registerForm", null, null);
     $form.setAttribute("name", "registerForm");
     $form.setAttribute("data-netlify", "true");
+    $form.setAttribute("netlify", true);
+    
     const $NetlifyHidden = createHtmlElement("input", "netlifyHidden", null, null);
     $NetlifyHidden.type = "hidden";
     $NetlifyHidden.name = "form-name";
