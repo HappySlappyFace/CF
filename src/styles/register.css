@@ -29,3 +29,54 @@ form {
     color: var(--ColorPaletteBlack);
 }
 /* END: Form Styles */
+
+.section1 {
+  display: block;
+  position: relative;
+  height: auto;
+  scroll-snap-align: start;
+}
+
+.registerContent{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+#section1Background {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 92vh;
+  object-fit:cover;
+  object-position: 50% 100%;
+  /* z-index: -1; */
+  filter: opacity(100%);
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+
+#registerTitle {
+  flex: 1;
+  color: var(--ColorPalette5);
+  font-family: 'Londrina Solid', sans-serif;
+  text-shadow: #081826 0px 0px 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+#registerParagraph {
+  color: var(--ColorPaletteWhite);
+  text-shadow: #081826 0px 0px 10px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+}

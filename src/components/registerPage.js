@@ -1,9 +1,49 @@
 import { $content, createHtmlElement } from "../index.js";
 import "../styles/register.css";
+import Img3 from "../img/section3.png";
 function render() {
+
+    const $sections = createHtmlElement("div", null, ["sections"], null); 
+    const $section1 = createHtmlElement("div", null, ["section1"], null);
+    const $img1 = new Image();
+      $img1.src = Img3;
+    $img1.id = "section1Background";
+    $img1.alt = "";
+    $section1.appendChild($img1);
+
+    const $registerContent = createHtmlElement(
+        "div",
+        null,
+        ["registerContent"],
+        null
+    );
+
+    const $h1 = createHtmlElement(
+        "h1",
+        "registerTitle",
+        null,
+        "CodeFiesta"
+    );
+    $registerContent.appendChild($h1);
+
+    const $h3 = createHtmlElement(
+        "h3",
+        "registerParagraph",
+        null,
+        "Sign up for the hackathon!"
+    );
+    $registerContent.appendChild($h3);
+    
+
     //generate form including Name, Email, university name, educational level, team name, birthday and Submit button
     const $form = createHtmlElement("form", "registerForm", null, null);
+    $form.setAttribute("name", "registerForm");
     $form.setAttribute("data-netlify", "true");
+    const $NetlifyHidden = createHtmlElement("input", "netlifyHidden", null, null);
+    $NetlifyHidden.type = "hidden";
+    $NetlifyHidden.name = "form-name";
+    $NetlifyHidden.value = "registerForm";
+    $form.appendChild($NetlifyHidden);
     const $name = createHtmlElement("input", "name", ["registerFormElement"], null);
     $name.type = "text";
     $name.placeholder = "Name";
@@ -52,7 +92,11 @@ function render() {
     $form.appendChild($members);
 
     $form.appendChild($submit);
-    $content.appendChild($form);
+
+    
+    $registerContent.appendChild($form);
+    $section1.appendChild($registerContent);
+    $content.appendChild($section1);
 
 }
 export { render as createRegister };
