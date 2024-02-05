@@ -16,10 +16,8 @@ function render() {
     ["registerContent"],
     null
   );
-
   const $h1 = createHtmlElement("h1", "registerTitle", null, "CodeFiesta");
   $registerContent.appendChild($h1);
-
   const $h3 = createHtmlElement(
     "h3",
     "registerParagraph",
@@ -34,7 +32,7 @@ function render() {
   $form.setAttribute("data-netlify", "true");
   $form.setAttribute("netlify", true);
   $form.setAttribute("method", "POST");
-  //   $form.setAttribute("action", "/index.html");
+  $form.setAttribute("action", "/index.html");
 
   const $NetlifyHidden = createHtmlElement(
     "input",
