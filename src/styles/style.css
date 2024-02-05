@@ -1,22 +1,25 @@
 /* colors */
 :root {
-  --HeaderColor: #EEA40B;
+  --HeaderColor: #eea40b;
   --HeaderTextColor: #081826;
-  --HeaderShadowColor: #B38423;
-  --ColorPaletteWhite: #FFF;
+  --HeaderShadowColor: #b38423;
+  --ColorPaletteWhite: #fff;
   --ColorPaletteBlack: #000;
-  --BackgroundColor: #003E1A;
-  --ColorPalette1: #D63E1A; /* Primary Red */
-  --ColorPalette2: #69A050; /* Primary Green*/
-  --ColorPalette3: #EEBC53; /* Primary Yellow*/
-  --ColorPalette4: #C13817; /* Section 3 Title */
-  --ColorPalette5: #FAB341; /* Section 1 Title */
-  --ColorPalette6: #E1BA5B; /* Section 3 Background */
+  --BackgroundColor: #003e1a;
+  --ColorPalette1: #d63e1a; /* Primary Red */
+  --ColorPalette2: #69a050; /* Primary Green*/
+  --ColorPalette3: #eebc53; /* Primary Yellow*/
+  --ColorPalette4: #c13817; /* Section 3 Title */
+  --ColorPalette5: #fab341; /* Section 1 Title */
+  --ColorPalette6: #e1ba5b; /* Section 3 Background */
   --ColorPalette7: #802510; /* Section 4 Background */
   --ColorPalette8: #121212; /* Section 5 Background MTC*/
   --ColorPalette9: #7a4690; /* MTC Color */
 }
-#content{
+#hiddenForm {
+  display: none;
+}
+#content {
   display: grid;
 }
 html {
