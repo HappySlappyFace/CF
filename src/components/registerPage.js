@@ -34,7 +34,7 @@ function render() {
   $form.setAttribute("data-netlify", "true");
   $form.setAttribute("netlify", true);
   $form.setAttribute("method", "POST");
-  $form.setAttribute("action", "/");
+  //   $form.setAttribute("action", "/index.html");
 
   const $NetlifyHidden = createHtmlElement(
     "input",
@@ -46,6 +46,7 @@ function render() {
   $NetlifyHidden.name = "form-name";
   $NetlifyHidden.value = "registerForm";
   $form.appendChild($NetlifyHidden);
+
   const $name = createHtmlElement(
     "input",
     "name",
@@ -54,6 +55,7 @@ function render() {
   );
   $name.type = "text";
   $name.placeholder = "Name";
+  $name.name = "name";
   $form.appendChild($name);
   const $phone = createHtmlElement(
     "input",
@@ -63,6 +65,7 @@ function render() {
   );
   $phone.type = "tel";
   $phone.placeholder = "Phone Number";
+  $phone.name = "phone";
   $form.appendChild($phone);
   const $email = createHtmlElement(
     "input",
@@ -72,6 +75,7 @@ function render() {
   );
   $email.type = "email";
   $email.placeholder = "Email";
+  $email.name = "email";
   $form.appendChild($email);
   const $university = createHtmlElement(
     "input",
@@ -81,6 +85,7 @@ function render() {
   );
   $university.type = "text";
   $university.placeholder = "University";
+  $university.name = "university";
   $form.appendChild($university);
   const $education = createHtmlElement(
     "select",
@@ -94,6 +99,7 @@ function render() {
   $education.appendChild($option2);
   const $option3 = createHtmlElement("option", null, null, "Graduate");
   $education.appendChild($option3);
+  $education.name = "education";
   $form.appendChild($education);
   const $team = createHtmlElement(
     "input",
@@ -103,6 +109,7 @@ function render() {
   );
   $team.type = "text";
   $team.placeholder = "Team Name";
+  $team.name = "team";
   $form.appendChild($team);
   const $birthday = createHtmlElement(
     "input",
@@ -111,6 +118,7 @@ function render() {
     null
   );
   $birthday.type = "date";
+  $birthday.name = "birthday";
   $form.appendChild($birthday);
   const $submit = createHtmlElement(
     "input",
@@ -136,6 +144,7 @@ function render() {
   $members.appendChild($option6);
   const $option7 = createHtmlElement("option", null, null, "4");
   $members.appendChild($option7);
+  $members.name = "members";
   $form.appendChild($members);
 
   $form.appendChild($submit);
