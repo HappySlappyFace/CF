@@ -32,7 +32,7 @@ function render() {
   $form.setAttribute("data-netlify", "true");
   $form.setAttribute("netlify", true);
   $form.setAttribute("method", "POST");
-  $form.setAttribute("action", "/index.html");
+  //   $form.setAttribute("action", "/index.html");
 
   const $NetlifyHidden = createHtmlElement(
     "input",
