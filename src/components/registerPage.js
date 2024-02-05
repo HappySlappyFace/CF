@@ -3,6 +3,7 @@ import "../styles/register.css";
 function render() {
     //generate form including Name, Email, university name, educational level, team name, birthday and Submit button
     const $form = createHtmlElement("form", "registerForm", null, null);
+    $form.setAttribute("data-netlify", "true");
     const $name = createHtmlElement("input", "name", ["registerFormElement"], null);
     $name.type = "text";
     $name.placeholder = "Name";
