@@ -34,6 +34,7 @@ function render() {
   $form.setAttribute("data-netlify", "true");
   $form.setAttribute("netlify", true);
   $form.setAttribute("method", "POST");
+  $form.setAttribute("action", "/");
 
   const $NetlifyHidden = createHtmlElement(
     "input",
