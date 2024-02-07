@@ -76,7 +76,7 @@ function register() {
 
 document.addEventListener("click", (e) => {
   const target = e.target.dataset.target;
-  console.log("wtf", event.target.dataset.target);
+  //console.log("wtf", event.target.dataset.target);
   if (target === "Home") home();
   if (target === "Sponsors") register();
   if (target === "Book") book();
