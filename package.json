@@ -13,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "compression-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "html-loader": "^4.2.0",
     "image-minimizer-webpack-plugin": "^4.0.0",
@@ -23,11 +22,14 @@
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^10.0.1",
     "style-loader": "^3.3.3",
-    "svgo": "^3.2.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "copy-webpack-plugin": "^12.0.2"
+  },
+  "IgnoredStuff": {
+    "compression-webpack-plugin": "^11.0.0",
+    "svgo": "^3.2.0"
   }
 }

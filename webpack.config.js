@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: "src/favicon", to: "" } //to the dist root directory
+        { from: "src/favicon", to: "" }, //to the dist root directory
       ],
     }),
   ],
@@ -23,24 +23,27 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
-        type: "asset/resource",
-      },
+      // You need this, if you are using `import file from "file.ext"`, for `new URL(...)` syntax you don't need it
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
+        type: "asset",
+      },
+      // We recommend using only for the "production" mode
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        enforce: "pre",
         use: [
           {
             loader: ImageMinimizerPlugin.loader,
-            // enforce: "pre",
+
             options: {
               minimizer: {
                 implementation: ImageMinimizerPlugin.imageminMinify,
                 options: {
                   plugins: [
+                    "imagemin-pngquant",
                     "imagemin-gifsicle",
                     "imagemin-mozjpeg",
-                    "imagemin-pngquant",
                     "imagemin-svgo",
                   ],
                 },
@@ -51,4 +54,34 @@ module.exports = {
       },
     ],
   },
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.(svg|webp)$/i,
+  //       type: "asset/resource",
+  //     },
+  //     {
+  //       test: /\.(jpe?g|png|gif)$/i,
+  //       use: [
+  //         {
+  //           loader: ImageMinimizerPlugin.loader,
+  //           type: "asset/resource",
+  //           options: {
+  //             quality: 85,
+  //             minimizer: {
+  //               implementation: ImageMinimizerPlugin.imageminMinify,
+  //               options: {
+  //                 plugins: [
+  //                   "imagemin-mozjpeg",
+  //                   "imagemin-pngquant",
+  //                   "imagemin-svgo",
+  //                 ],
+  //               },
+  //             },
+  //           },
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
 };

@@ -1,0 +1,46 @@
+{
+  "people": [
+    {
+      "ImgSrc": "emna.png",
+      "details": {
+        "name": "Emna Zouari",
+        "desc": "Web Development trainer"
+      }
+    },
+    {
+      "ImgSrc": "malek.png",
+      "details": {
+        "name": "Mohamed Triki",
+        "desc": "Web Development trainer"
+      }
+    },
+    {
+      "ImgSrc": "abdo.png",
+      "details": {
+        "name": "Mohamed Triki",
+        "desc": "Web Development trainer"
+      }
+    },
+    {
+      "ImgSrc": "emna.png",
+      "details": {
+        "name": "Emna Zouari",
+        "desc": "Web Development trainer"
+      }
+    },
+    {
+      "ImgSrc": "malek.png",
+      "details": {
+        "name": "Mohamed Triki",
+        "desc": "Web Development trainer"
+      }
+    },
+    {
+      "ImgSrc": "abdo.png",
+      "details": {
+        "name": "Mohamed Triki",
+        "desc": "Web Development trainer"
+      }
+    }
+  ]
+}

@@ -1,11 +1,12 @@
 import { $content, createHtmlElement } from "../index.js";
 import { registerButton } from "./registerButton.js";
 import { createCard } from "./card.js";
-import image from "../img/med2.jpg";
 import "../styles/home.css";
+
 import Img1 from "../img/section1.png";
 import Img3 from "../img/section3.png";
 import Img4 from "../img/section4.png";
+import SponsorData from "../json/sponsors.json";
 
 function importAll(r) {
   let imgs = {};
@@ -108,6 +109,15 @@ function render() {
   $img3.id = "section3Background";
   $section3.appendChild($img3);
 
+  const $img32 = new Image();
+  $img32.alt = "";
+  $img32.alt = "Background";
+  setTimeout(() => {
+    $img32.src = Img3;
+  }, 200);
+  $img32.id = "section3Background2";
+  $section3.appendChild($img32);
+
   const $section3Content = createHtmlElement(
     "div",
     null,
@@ -128,24 +138,20 @@ function render() {
     ["section3ContentCards"],
     null
   );
-  $section3ContentCards.appendChild(
-    createCard(image, {
-      name: "Mohamed Triki",
-      desc: "Web Development trainer",
-    })
-  );
-  $section3ContentCards.appendChild(
-    createCard(image, {
-      name: "Mohamed Triki",
-      desc: "Web Development trainer",
-    })
-  );
-  $section3ContentCards.appendChild(
-    createCard(image, {
-      name: "Mohamed Triki",
-      desc: "Web Development trainer",
-    })
-  );
+  // console.log(SponsorData.person);
+
+  SponsorData.people.forEach((sponsor) => {
+    let img3;
+    try {
+      img3 = require(`../img/sponsors/${sponsor.ImgSrc}`);
+    } catch (e) {
+      // console.log(e);
+      img3 = "placeholder";
+    } finally {
+      $section3ContentCards.appendChild(createCard(img3, sponsor.details));
+    }
+  });
+
   $section3Content.appendChild($section3ContentCards);
   $section3.appendChild($section3Content);
 

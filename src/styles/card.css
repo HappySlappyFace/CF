@@ -4,19 +4,22 @@
   box-shadow: rgba(var(--CardShadowColor), 0.25) 4px 4px 4px 0px;
   flex: 1;
   display: flex;
+  flex-basis: calc(100vw / 4);
+  background-color: var(--ColorPalette7);
   flex-direction: column;
 }
 .card img {
   /* width: 25rem; */
-  /* width: auto; */
+  /* min-width: 20vw; */
   height: 20vw;
+  max-width: 100%;
 
   flex-shrink: 1;
-  /* aspect-ratio: 1.2; */
+  aspect-ratio: 1.2;
   object-fit: cover;
   filter: opacity(100%);
   border-radius: 1rem 1rem 0 0;
-  object-position: 0% 0%;
+  object-position: 0% 30%;
   box-shadow: inset 4px 4px 5px 1px var(--CardShadowColor);
   background-color: var(--BackgroundColor);
 }
@@ -32,26 +35,35 @@
   border-radius: 0 0 1rem 1rem;
 }
 .cardTitle {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   font-weight: 500;
   text-align: center;
+  flex: 1;
 }
 .cardText {
-  font-size: 1rem;
-  font-weight: 300;
+  /* font-size: 1rem; */
+  font-weight: 200;
   text-align: center;
+  flex: 1;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .section3ContentCards {
     flex-direction: column;
   }
+} */
+/* Temporary solution to solve the cards*/
+@media screen and (max-width: 900px) {
   .card img {
     height: 30vw;
   }
 }
-/* Temporary solution to solve the cards*/
-@media screen and (max-width: 560px) {
-  .card img {
-    height: 40vw;
+@media screen and (min-width: 600px) {
+  .cardTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .cardText {
+    font-size: 1rem;
+    font-weight: 300;
   }
 }

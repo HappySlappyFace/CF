@@ -1,9 +1,14 @@
 import { $content, createHtmlElement } from "../index.js";
 import "../styles/card.css";
+import placeholder from "../img/placeholder.jpg";
 function render(cardSrc, cardContent) {
   const $card = createHtmlElement("div", "card", ["card"], null);
   const $img = new Image();
-  $img.src = cardSrc;
+  if (cardSrc === "placeholder") {
+    $img.src = placeholder;
+  } else {
+    $img.src = cardSrc;
+  }
   $img.alt = "";
   $card.appendChild($img);
   const $cardContainer = createHtmlElement(
