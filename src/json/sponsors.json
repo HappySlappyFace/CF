@@ -10,14 +10,14 @@
     {
       "ImgSrc": "malek.png",
       "details": {
-        "name": "Mohamed Triki",
+        "name": "Malek Gharbi",
         "desc": "Web Development trainer"
       }
     },
     {
       "ImgSrc": "abdo.png",
       "details": {
-        "name": "Mohamed Triki",
+        "name": "Abderrahmen Regaieg",
         "desc": "Web Development trainer"
       }
     },
@@ -31,12 +31,19 @@
     {
       "ImgSrc": "malek.png",
       "details": {
-        "name": "Mohamed Triki",
+        "name": "Malek Gharbi",
         "desc": "Web Development trainer"
       }
     },
     {
       "ImgSrc": "abdo.png",
+      "details": {
+        "name": "Abderrahmen Regaieg",
+        "desc": "Web Development trainer"
+      }
+    },
+    {
+      "ImgSrc": "med2.jpg",
       "details": {
         "name": "Mohamed Triki",
         "desc": "Web Development trainer"
