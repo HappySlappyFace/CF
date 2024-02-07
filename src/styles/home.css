@@ -1,4 +1,4 @@
-.sections{
+.sections {
   scroll-snap-type: y mandatory;
   /* overflow-y: scroll; */
 }
@@ -10,7 +10,7 @@
   scroll-snap-align: start;
 }
 
-.section1Content{
+.section1Content {
   position: absolute;
   top: 20%;
   left: 50%;
@@ -28,7 +28,7 @@
   left: 0;
   width: 100%;
   height: 92vh;
-  object-fit:cover;
+  object-fit: cover;
   object-position: 50% 100%;
   /* z-index: -1; */
   filter: opacity(100%);
@@ -39,7 +39,7 @@
 #section1Title {
   flex: 1;
   color: var(--ColorPalette5);
-  font-family: 'Londrina Solid', sans-serif;
+  font-family: "Londrina Solid", sans-serif;
   text-shadow: #081826 0px 0px 10px;
   text-align: center;
   font-weight: 500;
@@ -54,9 +54,6 @@
   font-size: 1rem;
 }
 
-
-
-
 .section2 {
   scroll-snap-align: start;
   display: block;
@@ -64,31 +61,32 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  
 }
 
-.section2 h2{
+.section2 h2 {
   z-index: 1;
   color: var(--ColorPaletteWhite);
   font-weight: 100;
 }
 
-.section-slideshow{
+.section-slideshow {
   height: 60vh; /* warning this is hard coded relative to the height of the images because i couldn't remember how to properly make parent take height of child*/
 }
 
 .section-slideshow img {
-    position: absolute;
-    /* top: 0; */
-    left: 0;
-    width: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: width: 100vw; */
-    height: 60vh; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: height: 100vh; */ 
-    object-fit: cover;
-    z-index:0;
-    filter: brightness(50%); /* 0% black, 100% original image, values > 100% are allowed for brighter than original image. */
-    /* display: none; */
-    opacity: 0;
-    transition: opacity 0.75s ease-in-out;
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: width: 100vw; */
+  height: 60vh; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: height: 100vh; */
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(
+    50%
+  ); /* 0% black, 100% original image, values > 100% are allowed for brighter than original image. */
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
 }
 
 .section-slideshow img:first-child {
@@ -96,10 +94,7 @@
   opacity: 1;
 }
 
-
-
-
-.section3{
+.section3 {
   scroll-snap-align: start;
   display: block;
   display: flex;
@@ -110,9 +105,9 @@
   color: var(--ColorPalette5);
   background-color: var(--ColorPalette6);
 }
-#section3Title{
-    color: var(--ColorPalette4);
-  font-family: 'Londrina Solid', sans-serif;
+#section3Title {
+  color: var(--ColorPalette4);
+  font-family: "Londrina Solid", sans-serif;
   /* text-shadow: #081826 0px 0px 1px; */
   text-align: center;
   font-weight: 500;
@@ -124,7 +119,7 @@
   left: 0;
   width: 100%;
   height: auto;
-  object-fit:cover;
+  object-fit: cover;
   object-position: 50% 100%;
   /* z-index: -1; */
   filter: opacity(100%);
@@ -132,7 +127,7 @@
   /* background-repeat: no-repeat; */
 }
 
-.section3Content{
+.section3Content {
   position: absolute;
   /* top: 20%; */
   left: 50%;
@@ -144,15 +139,14 @@
   gap: 1rem;
 }
 
-
-
-
-.section4{
+.section4 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(calc(100/567)*120vw); /* fucking hell 567 is the width of the picture */
+  height: calc(
+    calc(100 / 567) * 120vw
+  ); /* fucking hell 567 is the width of the picture */
   position: relative;
   gap: 1rem;
   color: var(--ColorPalette5);
@@ -161,42 +155,45 @@
   margin-bottom: 0; /* Make sure there is no bottom margin */
 }
 
-#section4Background{
+#section4Background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
-  object-fit:contain;
+  object-fit: contain;
   object-position: 50% 20%;
   z-index: 1;
   filter: opacity(100%);
   transform: translate(0, -20%);
 }
-#section4Title{
+#section4Title {
   color: var(--ColorPaletteWhite);
-  font-family: 'Londrina Solid', sans-serif;
+  font-family: "Londrina Solid", sans-serif;
   /* position: absolute; */
   /* text-shadow: #081826 0px 0px 1px; */
   text-align: center;
   font-weight: 500;
   font-size: 2rem;
 }
-
-.section5{
+.section4 .registerButton {
+  width: 31vw;
+  min-height: 3rem;
+}
+.section5 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  
-   color: var(--ColorPaletteWhite);
+
+  color: var(--ColorPaletteWhite);
   background-color: var(--ColorPalette8);
   padding-top: 0; /* Adjust or remove padding */
   margin-top: 0; /* Adjust or remove margin */
 }
-#section5Title{
+#section5Title {
   padding: 1rem;
-    font-weight: 500;
+  font-weight: 500;
   font-size: 2rem;
 }

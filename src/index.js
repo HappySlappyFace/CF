@@ -35,13 +35,12 @@ function slideshow() {
     // slideshowImages[currentImageCounter].style.display = "none";
     slideshowImages[currentImageCounter].style.opacity = 0;
 
-    currentImageCounter = (currentImageCounter+1) % slideshowImages.length;
+    currentImageCounter = (currentImageCounter + 1) % slideshowImages.length;
 
     // slideshowImages[currentImageCounter].style.display = "block";
     slideshowImages[currentImageCounter].style.opacity = 1;
   }
 }
-
 
 function home() {
   $content.innerHTML = "";
@@ -49,7 +48,6 @@ function home() {
   createHome();
   slideshow(); // this is required for the slideshow animation to work
   createFooter();
-  
 }
 function register() {
   $content.innerHTML = "";
@@ -58,28 +56,27 @@ function register() {
   createFooter();
 }
 
-
 // window.scroll({
-//   top: 2500, 
-//   left: 0, 
+//   top: 2500,
+//   left: 0,
 //   behavior: 'smooth'
 // });
 
-// // Scroll certain amounts from current position 
-// window.scrollBy({ 
+// // Scroll certain amounts from current position
+// window.scrollBy({
 //   top: 1000, // could be negative value
-//   left: 0, 
-//   behavior: 'smooth' 
+//   left: 0,
+//   behavior: 'smooth'
 // });
 
 // Scroll to a certain element
-// document.querySelector('.hello').scrollIntoView({ 
-//   behavior: 'smooth' 
+// document.querySelector('.hello').scrollIntoView({
+//   behavior: 'smooth'
 // });
 
 document.addEventListener("click", (e) => {
   const target = e.target.dataset.target;
-    // console.log("wtf", event.target.dataset.target);
+  console.log("wtf", event.target.dataset.target);
   if (target === "Home") home();
   if (target === "Sponsors") register();
   if (target === "Book") book();

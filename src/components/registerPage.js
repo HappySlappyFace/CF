@@ -116,6 +116,7 @@ function render() {
     null
   );
   $birthday.type = "date";
+  $birthday.placeholder = "YYYY-MM-DD";
   $birthday.name = "birthday";
   $form.appendChild($birthday);
   const $submit = createHtmlElement(
@@ -126,6 +127,8 @@ function render() {
   );
   $submit.type = "submit";
   $submit.value = "Submit";
+  $submit.onclick = validateRegisterForm;
+
   //add phone number and a select with team members from 1 to 4
 
   const $members = createHtmlElement(
@@ -151,4 +154,76 @@ function render() {
   $section1.appendChild($registerContent);
   $content.appendChild($section1);
 }
+function validateRegisterForm() {
+  // Retrieve form elements using querySelector
+  const name = document.querySelector("#registerForm input[name='name']").value;
+  const phone = document.querySelector(
+    "#registerForm input[name='phone']"
+  ).value;
+  const email = document.querySelector(
+    "#registerForm input[name='email']"
+  ).value;
+  const university = document.querySelector(
+    "#registerForm input[name='university']"
+  ).value;
+  const education = document.querySelector(
+    "#registerForm select[name='education']"
+  ).value;
+  const team = document.querySelector("#registerForm input[name='team']").value;
+  const birthday = document.querySelector(
+    "#registerForm input[name='birthday']"
+  ).value;
+  const members = document.querySelector(
+    "#registerForm select[name='members']"
+  ).value;
+
+  // Validate each field
+  if (name.trim() === "") {
+    alert("Name must be filled out");
+    return false;
+  }
+
+  if (phone.trim() === "" || phone.length < 10) {
+    // Basic validation for phone length
+    alert("Phone number seems invalid.");
+    return false;
+  }
+
+  if (email.trim() === "" || !email.includes("@")) {
+    alert("Invalid email address");
+    return false;
+  }
+
+  if (university.trim() === "") {
+    alert("University must be filled out");
+    return false;
+  }
+
+  // No need to validate 'education' and 'members' select fields for empty values
+  // as they will have a value if options are provided in the HTML
+
+  if (team.trim() === "") {
+    alert("Team name must be filled out");
+    return false;
+  }
+
+  if (birthday.trim() === "") {
+    alert("Birthday must be filled out");
+    return false;
+  }
+
+  // Assuming the form is valid at this point
+  return true; // Form is valid
+}
+
+// Optionally, you might want to attach this validation to the form's submit event
+document
+  .querySelector("#registerForm")
+  .addEventListener("submit", function (event) {
+    const isValid = validateRegisterForm();
+    if (!isValid) {
+      event.preventDefault(); // Prevent form submission if validation fails
+    }
+  });
+
 export { render as createRegister };

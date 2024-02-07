@@ -26,8 +26,8 @@ function render() {
     "All of the images are taken from "
   );
   const $span2 = createHtmlElement("span", null, ["footerSpan"], null);
-  const $a3 = createHtmlElement("a", null, null, "Alexis Gabriel Aïnouz");
-  $a3.href = "https://www.youtube.com/@FrenchGuyCooking";
+  const $a3 = createHtmlElement("a", null, null, "Microsoft Tech Club FSEGS");
+  $a3.href = "https://www.instagram.com/mtc_fsegs/";
   $a3.target = "_blank";
   $span2.appendChild($a3);
   $h22.appendChild($span2);
