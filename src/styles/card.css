@@ -2,7 +2,7 @@
   width: fit-content;
   border-radius: 1rem;
   box-shadow: rgba(var(--CardShadowColor), 0.25) 4px 4px 4px 0px;
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   flex-basis: calc(100vw / 4);
   background-color: var(--ColorPalette7);
