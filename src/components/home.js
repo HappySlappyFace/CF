@@ -1,5 +1,7 @@
 import { $content, createHtmlElement } from "../index.js";
 import { registerButton } from "./registerButton.js";
+import { createCard } from "./card.js";
+import image from "../img/med2.jpg";
 import "../styles/home.css";
 import Img1 from "../img/section1.png";
 import Img3 from "../img/section3.png";
@@ -112,6 +114,7 @@ function render() {
     ["section3Content"],
     null
   );
+
   const $h2Section3 = createHtmlElement(
     "h2",
     "section3Title",
@@ -119,6 +122,31 @@ function render() {
     "Sponsors and Trainers"
   );
   $section3Content.appendChild($h2Section3);
+  const $section3ContentCards = createHtmlElement(
+    "div",
+    null,
+    ["section3ContentCards"],
+    null
+  );
+  $section3ContentCards.appendChild(
+    createCard(image, {
+      name: "Mohamed Triki",
+      desc: "Web Development trainer",
+    })
+  );
+  $section3ContentCards.appendChild(
+    createCard(image, {
+      name: "Mohamed Triki",
+      desc: "Web Development trainer",
+    })
+  );
+  $section3ContentCards.appendChild(
+    createCard(image, {
+      name: "Mohamed Triki",
+      desc: "Web Development trainer",
+    })
+  );
+  $section3Content.appendChild($section3ContentCards);
   $section3.appendChild($section3Content);
 
   // section 4

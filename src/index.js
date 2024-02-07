@@ -45,6 +45,7 @@ function slideshow() {
 function home() {
   $content.innerHTML = "";
   createNavbar();
+
   createHome();
   slideshow(); // this is required for the slideshow animation to work
   createFooter();

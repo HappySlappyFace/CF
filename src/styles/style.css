@@ -15,6 +15,7 @@
   --ColorPalette7: #802510; /* Section 4 Background */
   --ColorPalette8: #121212; /* Section 5 Background MTC*/
   --ColorPalette9: #7a4690; /* MTC Color */
+  --CardShadowColor: 0, 0, 0;
 }
 #hiddenForm {
   display: none;

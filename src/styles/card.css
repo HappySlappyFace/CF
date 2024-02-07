@@ -1,0 +1,57 @@
+.card {
+  width: fit-content;
+  border-radius: 1rem;
+  box-shadow: rgba(var(--CardShadowColor), 0.25) 4px 4px 4px 0px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  /* width: 25rem; */
+  /* width: auto; */
+  height: 20vw;
+
+  flex-shrink: 1;
+  /* aspect-ratio: 1.2; */
+  object-fit: cover;
+  filter: opacity(100%);
+  border-radius: 1rem 1rem 0 0;
+  object-position: 0% 0%;
+  box-shadow: inset 4px 4px 5px 1px var(--CardShadowColor);
+  background-color: var(--BackgroundColor);
+}
+.card .cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--ColorPalette7);
+  color: var(--ColorPaletteWhite);
+  border-radius: 0 0 1rem 1rem;
+}
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.cardText {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section3ContentCards {
+    flex-direction: column;
+  }
+  .card img {
+    height: 30vw;
+  }
+}
+/* Temporary solution to solve the cards*/
+@media screen and (max-width: 560px) {
+  .card img {
+    height: 40vw;
+  }
+}
