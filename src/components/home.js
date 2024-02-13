@@ -8,11 +8,15 @@ import Img3 from "../img/section3.png";
 import Img4 from "../img/section4.png";
 import SponsorData from "../json/sponsors.json";
 
-import Splide from "@splidejs/splide";
+// core version + navigation, pagination modules:
+import Swiper from 'swiper';
+import {Navigation,Pagination,Autoplay} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-import "@splidejs/splide/css";
+
 //mobile detection function
-
 window.mobileCheck = function () {
   let check = false;
   (function (a) {
@@ -219,73 +223,78 @@ function render() {
     null,
     "About us"
   );
-  const $splide = createHtmlElement("div", null, ["splide"], null);
-  const $splideTrack = createHtmlElement("div", null, ["splide__track"], null);
-  const $splideList = createHtmlElement("ul", null, ["splide__list"], null);
 
-  // const $img5 = new Image();
-  // $img5.src = Img1;
-  // $img5.alt = "";
-  // $splideSlide.appendChild($img5);
-  //$splideList.appendChild($splideSlide);
-  
+  const $swiper = createHtmlElement("div", null, ["swiper"], null);
+  const $swiperWrapper = createHtmlElement("div", null, ["swiper-wrapper"], null);
 
   const delayIncrementAboutUs=500;
+
   let imageCountAboutUs = 0; // To keep track of the current image number
   for (let key in aboutUsImages) {
     if (aboutUsImages.hasOwnProperty(key)) {
       let imageUrl = aboutUsImages[key];
       const img = new Image();
       img.alt = "";
-      img.classList.add("splide__slide");
+      img.classList.add("swiper-slide");
       img.classList.add("section5SlideImages");
       if (imageCountAboutUs === 0) {
-        // Load the first image instantly
         img.src = imageUrl;
       } else {
-        // Calculate the delay for each subsequent image
         let delay = imageCountAboutUs * delayIncrementAboutUs;
         setTimeout(() => {
           img.src = imageUrl;
         }, delay);
       }
+      
+      $swiperWrapper.appendChild(img);
+      imageCountAboutUs++; // Increment the image count
 
-      // Uncomment if you need to add a class to your images
-      // img.classList.add("indexSection");
-      const $splideSlideContainer = createHtmlElement("li", null, ["splide__slide__container"], null);
-      $splideSlideContainer.appendChild(img);
-      $splideList.appendChild($splideSlideContainer);
 
     }
   }
-  $splideTrack.appendChild($splideList);
-  $splide.appendChild($splideTrack);  
-  $section5.appendChild($h2Section5);
-  $section5.appendChild($splide);
-  new Splide($splide, {
-          type: "loop",
-          heightRatio: 0.5,
-          perPage: 3,
-          breakpoints: {
-            1024: {
-              perPage: 3,
-             
-            },
-            767: {
-              perPage: 2,
-          
-            },
-            640: {
-              perPage: 1,
-        
-            },
-          },
-          focus: "center",
-          gap: '2em',
-          updateOnMove : true,
-          pagination: false,
-        }).mount();
 
+  $swiper.appendChild($swiperWrapper);
+  const $swiperPagination = createHtmlElement("div", null, ["swiper-pagination"], null);
+
+  $swiper.appendChild($swiperPagination);
+
+  const $swiperButtonNext = createHtmlElement("div", null, ["swiper-button-next"], null);
+  const $swiperButtonPrev = createHtmlElement("div", null, ["swiper-button-prev"], null);
+
+  $swiper.appendChild($swiperButtonNext);
+  $swiper.appendChild($swiperButtonPrev);
+  $section5.appendChild($h2Section5);
+  $section5.appendChild($swiper);
+
+  setTimeout(() => 
+  {
+    var swiper = new Swiper(".swiper", {
+      modules: [Navigation, Pagination, Autoplay], // NOTE! configure Swiper to use modules
+      speed: 400,
+      loop: false,
+      
+      autoResize: false,
+      slidesPerView : 'auto',
+      initialSlide : 2,
+      loop : true,
+      loopedSlides : 20,
+
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      spaceBetween: 30,
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  }, 20);
   //section appending
 
   $sections.appendChild($section1);
