@@ -1,7 +1,7 @@
 import { $content, createHtmlElement } from "../index.js";
 import "../styles/navbar.css";
-import LogoCF from '../logos/LogoCF.svg';
-import LogoMTC from '../logos/LogoMTCBlack.svg';
+import LogoCF from "../logos/LogoCF.svg";
+import LogoMTC from "../logos/LogoMTCBlack.svg";
 //test
 
 //
@@ -19,16 +19,22 @@ import LogoMTC from '../logos/LogoMTCBlack.svg';
 //
 
 function toggleMenu() {
-  var links = document.getElementById('navbarLinks');
-  if (links.classList.contains('active')) {
-    links.classList.remove('active');
+  var links = document.getElementById("navbarLinks");
+  if (links.classList.contains("active")) {
+    links.classList.remove("active");
   } else {
-    links.classList.add('active');
+    links.classList.add("active");
   }
 }
 
 function render() {
-  const navbarItems = ["History", "Sponsors", "Planning","Register", "About us"];
+  const navbarItems = [
+    "History",
+    //"Sponsors",
+    //"Planning",
+    "Register",
+    "About us",
+  ];
   const $header = document.createElement("header");
   const $ul = document.createElement("ul");
   $ul.setAttribute("id", "headerNavbar");
@@ -44,13 +50,13 @@ function render() {
 
   $ul.appendChild($li);
 
-  const $hamburger= createHtmlElement("li", "hamburger", null, null);
+  const $hamburger = createHtmlElement("li", "hamburger", null, null);
   $hamburger.classList.add("headerNavbarChild");
   $hamburger.classList.add("hamburger");
   $hamburger.textContent = "☰";
   $hamburger.addEventListener("click", toggleMenu);
   $ul.appendChild($hamburger);
-  
+
   const $navbarLinks = createHtmlElement("div", "navbarLinks", null, null);
 
   navbarItems.forEach((item) => {
@@ -68,6 +74,9 @@ function render() {
   $img2.alt = "Microsoft Tech Club FSEGS Logo";
   // $img2.dataset.target = "Home";
   $img2.style.fill = "red";
+  $li2.addEventListener("click", () => {
+    window.location.href = "https://www.facebook.com/mtcfsegs";
+  });
   $li2.appendChild($img2);
   $li2.classList.add("headerNavbarChild");
 

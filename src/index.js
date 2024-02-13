@@ -6,6 +6,7 @@ import { createFooter } from "./components/footer.js";
 import { createHome } from "./components/home.js";
 import { createRegister } from "./components/registerPage.js";
 
+// new Splide(document.querySelector(".section5")).mount();
 import "./styles/style.css";
 
 const $content = document.getElementById("content");
@@ -40,6 +41,15 @@ function slideshow() {
     // slideshowImages[currentImageCounter].style.display = "block";
     slideshowImages[currentImageCounter].style.opacity = 1;
   }
+}
+function jumpToAnchor(anchorId, options = {}) {
+  const anchorElement = document.querySelector(anchorId);
+  if (!anchorElement) {
+    console.error(`Anchor with ID "${anchorId}" not found.`);
+    return;
+  }
+
+  anchorElement.scrollIntoView(options);
 }
 
 function home() {
@@ -78,12 +88,12 @@ function register() {
 document.addEventListener("click", (e) => {
   const target = e.target.dataset.target;
   //console.log("wtf", event.target.dataset.target);
-  if (target === "Home") home();
-  if (target === "Sponsors") register();
-  if (target === "Book") book();
-
-  if (target === "Register") register();
-  if (target === "Github") github();
+  if (target === "Home") jumpToAnchor(".section1", { behavior: "smooth" });
+  if (target === "History") jumpToAnchor(".section2", { behavior: "smooth" });
+  if (target === "Sponsors");
+  if (target === "Planning");
+  if (target === "Register") jumpToAnchor(".section4", { behavior: "smooth" });
+  if (target === "About us") jumpToAnchor(".section5", { behavior: "smooth" });
 });
 home();
 export { createHtmlElement, $content };

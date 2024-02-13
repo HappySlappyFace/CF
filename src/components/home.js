@@ -8,6 +8,9 @@ import Img3 from "../img/section3.png";
 import Img4 from "../img/section4.png";
 import SponsorData from "../json/sponsors.json";
 
+import Splide from "@splidejs/splide";
+
+import "@splidejs/splide/css";
 //mobile detection function
 
 window.mobileCheck = function () {
@@ -38,7 +41,11 @@ function importAll(r) {
 const images = importAll(
   require.context("../img/pastHackathons/", false, /\.(png|jpe?g|svg)$/)
 );
-// console.log(images);
+
+const aboutUsImages = importAll(
+  require.context("../img/aboutUs/", false, /\.(png|jpe?g|svg)$/)
+);
+console.log(aboutUsImages);
 
 function render() {
   const $sections = createHtmlElement("div", null, ["sections"], null);
@@ -212,7 +219,74 @@ function render() {
     null,
     "About us"
   );
+  const $splide = createHtmlElement("div", null, ["splide"], null);
+  const $splideTrack = createHtmlElement("div", null, ["splide__track"], null);
+  const $splideList = createHtmlElement("ul", null, ["splide__list"], null);
+
+  // const $img5 = new Image();
+  // $img5.src = Img1;
+  // $img5.alt = "";
+  // $splideSlide.appendChild($img5);
+  //$splideList.appendChild($splideSlide);
+  
+
+  const delayIncrementAboutUs=500;
+  let imageCountAboutUs = 0; // To keep track of the current image number
+  for (let key in aboutUsImages) {
+    if (aboutUsImages.hasOwnProperty(key)) {
+      let imageUrl = aboutUsImages[key];
+      const img = new Image();
+      img.alt = "";
+      img.classList.add("splide__slide");
+      img.classList.add("section5SlideImages");
+      if (imageCountAboutUs === 0) {
+        // Load the first image instantly
+        img.src = imageUrl;
+      } else {
+        // Calculate the delay for each subsequent image
+        let delay = imageCountAboutUs * delayIncrementAboutUs;
+        setTimeout(() => {
+          img.src = imageUrl;
+        }, delay);
+      }
+
+      // Uncomment if you need to add a class to your images
+      // img.classList.add("indexSection");
+      const $splideSlideContainer = createHtmlElement("li", null, ["splide__slide__container"], null);
+      $splideSlideContainer.appendChild(img);
+      $splideList.appendChild($splideSlideContainer);
+
+    }
+  }
+  $splideTrack.appendChild($splideList);
+  $splide.appendChild($splideTrack);  
   $section5.appendChild($h2Section5);
+  $section5.appendChild($splide);
+  new Splide($splide, {
+          type: "loop",
+          heightRatio: 0.5,
+          perPage: 3,
+          breakpoints: {
+            1024: {
+              perPage: 3,
+             
+            },
+            767: {
+              perPage: 2,
+          
+            },
+            640: {
+              perPage: 1,
+        
+            },
+          },
+          focus: "center",
+          gap: '2em',
+          updateOnMove : true,
+          pagination: false,
+        }).mount();
+
+  //section appending
 
   $sections.appendChild($section1);
   $sections.appendChild($section2);

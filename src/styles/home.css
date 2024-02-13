@@ -190,6 +190,7 @@
   z-index: 1;
   filter: opacity(100%);
   transform: translate(0, -20%);
+  pointer-events: none
 }
 #section4Title {
   color: var(--ColorPaletteWhite);
@@ -221,6 +222,14 @@
   padding: 1rem;
   font-weight: 500;
   font-size: 2rem;
+}
+.section5SlideImages{
+  height: 9rem;
+  width: auto;
+}
+.splide__slide img {
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 768px) {
