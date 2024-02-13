@@ -88,11 +88,11 @@ function register() {
 document.addEventListener("click", (e) => {
   const target = e.target.dataset.target;
   //console.log("wtf", event.target.dataset.target);
-  if (target === "Home") jumpToAnchor(".section1", { behavior: "smooth" });
+  if (target === "Home") home();
   if (target === "History") jumpToAnchor(".section2", { behavior: "smooth" });
   if (target === "Sponsors");
   if (target === "Planning");
-  if (target === "Register") jumpToAnchor(".section4", { behavior: "smooth" });
+  if (target === "Register") register();
   if (target === "About us") jumpToAnchor(".section5", { behavior: "smooth" });
 });
 home();

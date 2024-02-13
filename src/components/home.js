@@ -10,7 +10,7 @@ import SponsorData from "../json/sponsors.json";
 
 // core version + navigation, pagination modules:
 import Swiper from 'swiper';
-import {Navigation,Pagination,Autoplay} from 'swiper/modules';
+import {Navigation,Pagination,Autoplay, FreeMode} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -49,7 +49,7 @@ const images = importAll(
 const aboutUsImages = importAll(
   require.context("../img/aboutUs/", false, /\.(png|jpe?g|svg)$/)
 );
-console.log(aboutUsImages);
+
 
 function render() {
   const $sections = createHtmlElement("div", null, ["sections"], null);
@@ -233,6 +233,9 @@ function render() {
   for (let key in aboutUsImages) {
     if (aboutUsImages.hasOwnProperty(key)) {
       let imageUrl = aboutUsImages[key];
+
+      const $AboutUsCards = createHtmlElement("div", null, ["AboutUsCards","swiper-slide"], null);
+      const $imageGradient = createHtmlElement("div", null, ["imageGradient"], null);
       const img = new Image();
       img.alt = "";
       img.classList.add("swiper-slide");
@@ -245,8 +248,15 @@ function render() {
           img.src = imageUrl;
         }, delay);
       }
+      const $AboutUsContent = createHtmlElement("h1", null, ["AboutUsContent"], "asdsa");
+      $imageGradient.appendChild(img);
       
-      $swiperWrapper.appendChild(img);
+      $AboutUsCards.appendChild($imageGradient);
+      $AboutUsCards.appendChild($AboutUsContent);
+      $swiperWrapper.appendChild($AboutUsCards);
+      // $swiperWrapper.appendChild(img);
+
+
       imageCountAboutUs++; // Increment the image count
 
 
@@ -269,16 +279,15 @@ function render() {
   setTimeout(() => 
   {
     var swiper = new Swiper(".swiper", {
-      modules: [Navigation, Pagination, Autoplay], // NOTE! configure Swiper to use modules
+      modules: [Navigation, Pagination, Autoplay,FreeMode], // NOTE! configure Swiper to use modules
       speed: 400,
       loop: false,
-      
       autoResize: false,
       slidesPerView : 'auto',
       initialSlide : 2,
       loop : true,
       loopedSlides : 20,
-
+      
       pagination: {
         el: '.swiper-pagination',
       },
@@ -293,8 +302,9 @@ function render() {
         delay: 2500,
         disableOnInteraction: false,
       },
+      freeMode: { enabled: true , momentum: true},
     });
-  }, 20);
+  }, 600);
   //section appending
 
   $sections.appendChild($section1);
