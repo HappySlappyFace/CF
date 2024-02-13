@@ -4,9 +4,8 @@
 }
 
 .section1 {
-  display: block;
-  position: relative;
-  height: auto;
+  display: flex;
+  align-items: center;
   scroll-snap-align: start;
 }
 
@@ -15,6 +14,7 @@
   top: 20%;
   left: 50%;
   transform: translate(-50%, -20%);
+  gap: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -46,12 +46,16 @@
   font-size: 2rem;
 }
 
-#section1Paragraph {
+.section1Paragraph {
   color: var(--ColorPaletteWhite);
+  font-family: "Londrina Solid", sans-serif;
   text-shadow: #081826 0px 0px 10px;
   text-align: center;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+.section1OrangeSpan {
+  color: var(--ColorPalette4);
 }
 
 .section2 {
@@ -195,6 +199,7 @@
   text-align: center;
   font-weight: 500;
   font-size: 2rem;
+  z-index: 3;
 }
 .section4 .registerButton {
   width: 31vw;
@@ -221,6 +226,13 @@
 @media screen and (max-width: 768px) {
   #section3Background2 {
     display: block;
+  }
+  .section1Content {
+    align-items: center;
+    top: inherit;
+    left: inherit;
+    transform: inherit;
+    padding: 1rem;
   }
 }
 

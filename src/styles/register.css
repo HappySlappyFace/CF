@@ -1,52 +1,60 @@
 /* BEGIN: Form Styles */
 form {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-self: center;
-    width: max-content;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  width: -webkit-fill-available;
+
+  gap: 1rem;
+  flex: 1;
 }
 
 .registerFormElement {
-    background-color: transparent;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    color: var(--ColorPaletteWhite);
-    flex: 1;
+  background-color: transparent;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--ColorPaletteWhite);
+  width: 80%;
+  flex-grow: 1;
+  flex: 1;
+  color: var(--RegisterTextColor);
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
 }
 
 .registerFormElement::placeholder {
-    color: var(--ColorPalette1);
+  color: var(--ColorPaletteWhite);
+  font-weight: 200;
 }
 
 .registerFormElement:focus {
-    color: var(--ColorPaletteWhite);
-    font-weight: bold;
+  color: var(--ColorPaletteWhite);
+  /* font-weight: bold; */
 }
-.registerFormElement option{
-    color: var(--ColorPaletteBlack);
+.registerFormElement option {
+  color: var(--ColorPaletteBlack);
+}
+.registerFormElement {
+  font-weight: 400;
 }
 /* END: Form Styles */
 
-.section1 {
-  display: block;
-  position: relative;
-  height: auto;
-  scroll-snap-align: start;
-}
-
-.registerContent{
+.registerContent {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -20%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 1rem;
+  transform: translate(-50%, -15%);
+  display: grid;
+  gap: 1.5rem;
+
+  background-color: var(--BackgroundColor);
+  filter: drop-shadow(0px 0 40px rgba(var(--CardShadowColor), 0.2));
+  width: 60%;
+  border-radius: 1rem;
+  padding: 3rem;
+  flex: 1;
 }
 
 #section1Background {
@@ -55,7 +63,7 @@ form {
   left: 0;
   width: 100%;
   height: 92vh;
-  object-fit:cover;
+  object-fit: cover;
   object-position: 50% 100%;
   /* z-index: -1; */
   filter: opacity(100%);
@@ -66,7 +74,7 @@ form {
 #registerTitle {
   flex: 1;
   color: var(--ColorPalette5);
-  font-family: 'Londrina Solid', sans-serif;
+  font-family: "Londrina Solid", sans-serif;
   text-shadow: #081826 0px 0px 10px;
   text-align: center;
   font-weight: 500;
@@ -79,4 +87,26 @@ form {
   text-align: center;
   font-weight: 300;
   font-size: 1rem;
+}
+#submit {
+  width: auto;
+  padding: 0.6rem 2rem;
+  background-color: var(--ColorPaletteWhite);
+  color: var(--ColorPaletteBlack);
+  font-weight: 800;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+#Logo {
+  width: 60%;
+  place-self: center;
+  object-fit: cover;
+}
+@media screen and (max-width: 470px) {
+  .registerContent {
+    width: 80%;
+  }
+  #Logo {
+    width: 80%;
+  }
 }

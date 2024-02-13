@@ -12,3 +12,39 @@
   border-radius: 5px;
   padding: 0.1rem 4rem;
 }
+@media screen and (max-width: 768px) {
+  .registerButton {
+    padding: 0.1rem 2rem;
+    font-size: 1rem;
+  }
+  #section4Title {
+    font-size: 1.5rem !important;
+  }
+}
+@media screen and (max-width: 470px) {
+  .section4 {
+    height: calc(
+      calc(100 / 567) * 130vw
+    ) !important; /* fucking hell 567 is the width of the picture */
+  }
+}
+@media screen and (max-width: 410px) {
+  .section4 {
+    height: calc(
+      calc(100 / 567) * 150vw
+    ) !important; /* fucking hell 567 is the width of the picture */
+  }
+  #section4Title {
+    font-size: 1.4rem !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .section4 {
+    height: calc(
+      calc(100 / 567) * 160vw
+    ) !important; /* fucking hell 567 is the width of the picture */
+  }
+  #section4Title {
+    font-size: 1.35rem !important;
+  }
+}
