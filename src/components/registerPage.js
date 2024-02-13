@@ -156,7 +156,7 @@ function validateRegisterForm() {
     return false;
   }
 
-  if (phone.trim() === "" || phone.length < 10) {
+  if (phone.trim() === "") {
     // Basic validation for phone length
     alert("Phone number seems invalid.");
     return false;
