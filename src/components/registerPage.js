@@ -4,7 +4,7 @@ import Img3 from "../img/section3.png";
 
 function render() {
   const $sections = createHtmlElement("div", null, ["sections"], null);
-  const $section1 = createHtmlElement("div", null, ["section1"], null);
+  const $section1 = createHtmlElement("div", null, ["section1","registerSection1"], null);
   const $img1 = new Image();
   $img1.src = Img3;
   $img1.id = "section1Background";
