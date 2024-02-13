@@ -254,7 +254,7 @@
 }
 
 .AboutUsCards{
-  display: grid;
+  display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
@@ -263,7 +263,12 @@
 .AboutUsCards img{
   max-width: 100%;
 }
-
+.AboutUsContent{
+  position: absolute;
+    bottom: 10%; 
+  left: 50%; 
+  transform: translate(-50%, -10%); 
+}
 .imageGradient {
   /* max-width: 100%;  */
   /* width: 800px; */

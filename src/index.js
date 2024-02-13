@@ -8,7 +8,7 @@ import { createRegister } from "./components/registerPage.js";
 
 // new Splide(document.querySelector(".section5")).mount();
 import "./styles/style.css";
-
+let currentPlace="home";
 const $content = document.getElementById("content");
 
 function createHtmlElement(type, id, arrayClasses, content) {
@@ -87,13 +87,13 @@ function register() {
 
 document.addEventListener("click", (e) => {
   const target = e.target.dataset.target;
-  //console.log("wtf", event.target.dataset.target);
-  if (target === "Home") home();
-  if (target === "History") jumpToAnchor(".section2", { behavior: "smooth" });
-  if (target === "Sponsors");
-  if (target === "Planning");
-  if (target === "Register") register();
-  if (target === "About us") jumpToAnchor(".section5", { behavior: "smooth" });
+  // console.log("wtf", event.target.dataset.target);
+  if (target === "Home") {home(); currentPlace="home";}
+  if (target === "History" &&currentPlace==="home") jumpToAnchor(".section2", { behavior: "smooth" });
+  if (target === "Sponsors"&&currentPlace==="home");
+  if (target === "Planning"&&currentPlace==="home");
+  if (target === "Register") {console.log("test");register(); currentPlace="register";}
+  if (target === "About us"&&currentPlace==="home") jumpToAnchor(".section5", { behavior: "smooth" });
 });
 home();
 export { createHtmlElement, $content };

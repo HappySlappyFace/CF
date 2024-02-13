@@ -7,6 +7,7 @@ import Img1 from "../img/section1.png";
 import Img3 from "../img/section3.png";
 import Img4 from "../img/section4.png";
 import SponsorData from "../json/sponsors.json";
+import AboutUsData from "../json/aboutUs.json";
 
 // core version + navigation, pagination modules:
 import Swiper from 'swiper';
@@ -230,10 +231,17 @@ function render() {
   const delayIncrementAboutUs=500;
 
   let imageCountAboutUs = 0; // To keep track of the current image number
-  for (let key in aboutUsImages) {
-    if (aboutUsImages.hasOwnProperty(key)) {
-      let imageUrl = aboutUsImages[key];
 
+  AboutUsData.AboutUs.forEach((AboutUs) => {
+    let imageUrl;
+    let imgDesc;
+    try {
+      imageUrl = require(`../img/aboutUs/${AboutUs.ImgSrc}`);
+      imgDesc = AboutUs.description;
+    } catch (e) {
+      // console.log(e);
+      imageUrl = "placeholder";
+    } finally {
       const $AboutUsCards = createHtmlElement("div", null, ["AboutUsCards","swiper-slide"], null);
       const $imageGradient = createHtmlElement("div", null, ["imageGradient"], null);
       const img = new Image();
@@ -248,20 +256,45 @@ function render() {
           img.src = imageUrl;
         }, delay);
       }
-      const $AboutUsContent = createHtmlElement("h1", null, ["AboutUsContent"], "asdsa");
+      const $AboutUsContent = createHtmlElement("h1", null, ["AboutUsContent"], imgDesc);
       $imageGradient.appendChild(img);
       
       $AboutUsCards.appendChild($imageGradient);
       $AboutUsCards.appendChild($AboutUsContent);
       $swiperWrapper.appendChild($AboutUsCards);
       // $swiperWrapper.appendChild(img);
-
-
       imageCountAboutUs++; // Increment the image count
-
-
     }
-  }
+  });
+
+  // for (let key in aboutUsImages) {
+  //   if (aboutUsImages.hasOwnProperty(key)) {
+  //     let imageUrl = aboutUsImages[key];
+
+  //     const $AboutUsCards = createHtmlElement("div", null, ["AboutUsCards","swiper-slide"], null);
+  //     const $imageGradient = createHtmlElement("div", null, ["imageGradient"], null);
+  //     const img = new Image();
+  //     img.alt = "";
+  //     img.classList.add("swiper-slide");
+  //     img.classList.add("section5SlideImages");
+  //     if (imageCountAboutUs === 0) {
+  //       img.src = imageUrl;
+  //     } else {
+  //       let delay = imageCountAboutUs * delayIncrementAboutUs;
+  //       setTimeout(() => {
+  //         img.src = imageUrl;
+  //       }, delay);
+  //     }
+  //     const $AboutUsContent = createHtmlElement("h1", null, ["AboutUsContent"], "asdsa");
+  //     $imageGradient.appendChild(img);
+      
+  //     $AboutUsCards.appendChild($imageGradient);
+  //     $AboutUsCards.appendChild($AboutUsContent);
+  //     $swiperWrapper.appendChild($AboutUsCards);
+  //     // $swiperWrapper.appendChild(img);
+  //     imageCountAboutUs++; // Increment the image count
+  //   }
+  // }
 
   $swiper.appendChild($swiperWrapper);
   const $swiperPagination = createHtmlElement("div", null, ["swiper-pagination"], null);
@@ -284,7 +317,7 @@ function render() {
       loop: false,
       autoResize: false,
       slidesPerView : 'auto',
-      initialSlide : 2,
+      initialSlide : 0,
       loop : true,
       loopedSlides : 20,
       
@@ -298,10 +331,10 @@ function render() {
       },
       spaceBetween: 30,
 
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
       freeMode: { enabled: true , momentum: true},
     });
   }, 600);
